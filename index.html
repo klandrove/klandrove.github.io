@@ -3,17 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Londrina+Solid:wght@100;300;400;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Kaitlyn Landrove</title>
 </head>
 <body>
+    <script src="cursor.js"></script>
     <nav>
-        <a href="./about.html">About Me</a> |
-        <a href="/projects/">Projects</a>
-        <h1>Kaitlyn Landrove</h1>
-        <a href="/contact/">Contact Me</a> |
-        <a href="/resume/">Resume</a> 
+        <a class="nav-item hover-underline-animation left" href="./about.html">About Me</a>
+        <a class="nav-item hover-underline-animation left" href="./projects/">Projects</a>
+        <a class="brand" href="./">            
+            <img class="logo" src="Logo.png" alt="Kaitlyn Landrove Logo">
+        </a>
+        <a class="nav-item hover-underline-animation left" href="./contact/">Contact Me</a>
+        <a class="nav-item hover-underline-animation left" href="./resume/">Resume</a> 
     </nav>
-    <h2>Welcome to my website!</h2>
+    <!-- Hover animation from: https://www.30secondsofcode.org/css/s/hover-underline-animation/-->
+    <!-- Flower from: https://dev.to/munimiftikhar/learn-to-create-flowers-grid-in-css-g6l -->
+
+    <div id="flower-container">
+        <div class="flower">
+            <div class="petal">
+                  <div class="circle"></div>
+                  <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+            <div class="petal">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+
+    <h1>I am a...</h1>
+
+    <div class="body-content">
+        <img class="headshot" src="Headshot.jpg" alt="">
+    </div>
+    <div class="contact">
+        <h3 class="contact-me">Contact Me!</h3>
+        <address class="contact-info">
+            Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
+            Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
+            LinkedIn: <a class= "hover-underline-animation left" href="https://www.linkedin.com/in/kaitlyn-landrove/">Kaitlyn Landrove</a>
+        </address>
+    </div>
+    
+    <!-- <script src="create_flowers.js"></script> -->
 </body>
 </html>
