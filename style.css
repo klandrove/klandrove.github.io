@@ -13,18 +13,6 @@ nav{
     gap: 3rem;
 }
 
-.nav-item{
-    font-family: 'Zain', serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: white;
-}
-
-.nav-item:hover{
-    color: #ffceb0;
-}
-
 h1{
     font-family: 'Londrina Solid', sans-serif;
     font-weight: 300;
@@ -56,6 +44,35 @@ p{
     font-size: 1.4rem;
 }
 
+a{
+    text-decoration: none;
+}
+
+.nav-item{
+    font-family: 'Zain', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover{
+    color: #ffceb0;
+}
+
+.logo{
+    height: 3rem;
+    align-self: center;
+}
+
+.brand{
+    display: flex;
+}
+
+.brand h2{
+    text-decoration: none;
+}
+
 .wiggly-box {
     --s: 20px;  /* control the size of the wave */
     --w: 400px; /* preferred image width */
@@ -65,7 +82,7 @@ p{
     border: calc(2*var(--s)) solid #0000;
     padding: calc(3*var(--s)/2);
     box-sizing: border-box;
-    background: #f164ad;
+    background: #17642D;
     mask: 
       conic-gradient(#000 0 0) no-repeat
        50%/calc(100% - 6*var(--s)) calc(100% - 6*var(--s)),
@@ -82,7 +99,8 @@ p{
 }
 
 .bio{
-    max-width: 80vh;
+    max-width: 60vw;
+    min-width: 50vw;
     text-align: left;
 }
 
@@ -98,6 +116,9 @@ p{
 .contact{
     background-color: #f164ad;
     padding: 1rem 2rem;
+    position:fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 .contact-me{
@@ -155,4 +176,98 @@ p{
   
 .hover-underline-animation.left:hover::after {
     transform-origin: bottom left;
+}
+
+#flower-container{
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    overflow: hidden;
+}
+
+.flower{
+    position: absolute;
+    right: 6vw;
+    top: 0;
+}
+
+.circle {
+    background: #f46a14;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.triangle {
+    margin-top: -20px;
+    width: 0;
+    height: 0;
+    border-top: 80px solid #f46a14;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;   
+}
+
+.petal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: center 120px;
+}
+
+.petal:nth-child(1) {
+
+    transform: rotate(45deg);
+
+}
+
+.petal:nth-child(2) {
+
+    transform: rotate(65deg);
+
+}
+
+.petal:nth-child(2) {
+
+    transform: rotate(90deg);
+
+}
+
+.petal:nth-child(3) {
+
+    transform: rotate(135deg);
+
+}
+
+.petal:nth-child(5) {
+
+    transform: rotate(180deg);
+
+}
+
+.petal:nth-child(6) {
+
+    transform: rotate(225deg);
+
+}
+
+.petal:nth-child(7) {
+
+    transform: rotate(270deg);
+
+}
+
+.petal:nth-child(8) {
+
+    transform: rotate(315deg);
+
+}
+
+.petal:nth-child(9) {
+
+    transform: rotate(360deg);
+
 }
