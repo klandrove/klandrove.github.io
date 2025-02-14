@@ -6,7 +6,7 @@ body{
 
 nav{
     display:flex;
-    background-color: #f164ad;
+    background-color: #FF5099;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,7 @@ a{
 }
 
 .contact{
-    background-color: #f164ad;
+    background-color: #FF5099;
     padding: 1rem 2rem;
     position:fixed;
     bottom: 0;
