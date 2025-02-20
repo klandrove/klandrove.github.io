@@ -6,78 +6,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Londrina+Solid:wght@100;300;400;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Kaitlyn Landrove</title>
 </head>
 <body>
     <script src="cursor.js"></script>
     <nav>
-        <a class="nav-item hover-underline-animation left" href="./about.html">About Me</a>
-        <a class="nav-item hover-underline-animation left" href="./projects/">Projects</a>
-        <a class="brand" href="./">            
-            <img class="logo" src="Logo.png" alt="Kaitlyn Landrove Logo">
-        </a>
-        <a class="nav-item hover-underline-animation left" href="./contact/">Contact Me</a>
-        <a class="nav-item hover-underline-animation left" href="./resume/">Resume</a> 
+        <div>
+            <a class="brand" href="./">            
+                <h1>KAITLYN LANDROVE</h1>
+            </a>
+        </div>
+        <div class="nav-right">
+            <a class="nav-item hover-underline-animation left" href="./about.html">About Me</a>
+            <a class="nav-item hover-underline-animation left" href="./projects/">Projects</a>
+            <a class="nav-item hover-underline-animation left" href="./contact/">Contact Me</a>
+            <a class="nav-item hover-underline-animation left" href="./resume/">Resume</a> 
+        </div>
     </nav>
     <!-- Hover animation from: https://www.30secondsofcode.org/css/s/hover-underline-animation/-->
-    <!-- Flower from: https://dev.to/munimiftikhar/learn-to-create-flowers-grid-in-css-g6l -->
-
-    <div id="flower-container">
-        <div class="flower">
-            <div class="petal">
-                  <div class="circle"></div>
-                  <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
+    <div>
+        <h1 class="top-container">HELLO!</h1>
+    </div>
+    <div class="intro-div">
+        <div class="headshot-container">
+             <img class="headshot" src="Headshot.jpg" alt="">
+        </div>
+        <div class="intro-text">
+            <h2>I'm Kaitlyn, a</h2>
+            <h2 id="title">Software Engineer</h2>
         </div>
     </div>
-
-    <h1>I am a...</h1>
-
-    <div class="body-content">
-        <img class="headshot" src="Headshot.jpg" alt="">
+    <div>
+        <div>
+            <div class="my-work">
+                <h2>Check out some of my work!</h2>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="112" viewBox="0 0 1728 112" fill="none" style="width: 100%; height: auto;">
+                <path d="M1783 97.7328L1723.37 95.0361C1663.73 92.1359 1544.47 87.0479 1425.2 76.0069C1305.93 65.1694 1186.67 48.8878 1067.4 48.8878C948.133 48.8878 828.867 65.1694 709.6 81.4511C590.333 97.7328 471.067 114.014 351.8 111.318C232.533 108.418 113.267 87.0479 53.6334 76.0069L-5.99994 65.1694V0.0427246H53.6334C113.267 0.0427246 232.533 0.0427246 351.8 0.0427246C471.067 0.0427246 590.333 0.0427246 709.6 0.0427246C828.867 0.0427246 948.133 0.0427246 1067.4 0.0427246C1186.67 0.0427246 1305.93 0.0427246 1425.2 0.0427246C1544.47 0.0427246 1663.73 0.0427246 1723.37 0.0427246H1783V97.7328Z" fill="#F97746"/>
+            </svg>
+        </div>
     </div>
-    <div class="contact">
-        <h3 class="contact-me">Contact Me!</h3>
-        <address class="contact-info">
-            Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
-            Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
+    <div class="projects">
+        <div class="project">
+            <a href="/websites" class= "hover-underline-animation left">Websites</a>
+        </div>
+        <div class="project">
+            <a href="/prototypes" class= "hover-underline-animation left">Prototypes</a>
+        </div>
+        <div class="project">
+            <a href="/games" class= "hover-underline-animation left">Games</a>
+        </div>
+        <div class="project">
+            <a href="/physical-computing" class= "hover-underline-animation left">Physical Computing</a>
+        </div>
+    </div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="120" viewBox="0 0 1728 119" fill="none" style="width: 100%; height: auto;">
+            <path d="M-61 15.6L-1.36667 18.4819C58.2667 21.5813 177.533 27.0187 296.8 38.8181C416.067 50.4 535.333 67.8 654.6 67.8C773.867 67.8 893.133 50.4 1012.4 33C1131.67 15.6 1250.93 -1.8 1370.2 1.08188C1489.47 4.18125 1608.73 27.0187 1668.37 38.8181L1728 50.4V120H1668.37C1608.73 120 1489.47 120 1370.2 120C1250.93 120 1131.67 120 1012.4 120C893.133 120 773.867 120 654.6 120C535.333 120 416.067 120 296.8 120C177.533 120 58.2667 120 -1.36667 120H-61V15.6Z" fill="#FF97C6"/>
+            </svg>
+        <div class="contact">
+            <h3 class="contact-me">Contact Me!</h3>
+            <address class="contact-info">
+                Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
+                Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
             LinkedIn: <a class= "hover-underline-animation left" href="https://www.linkedin.com/in/kaitlyn-landrove/">Kaitlyn Landrove</a>
         </address>
     </div>
-    
-    <!-- <script src="create_flowers.js"></script> -->
+    <script src="rotate_words.js"></script>
 </body>
 </html>
