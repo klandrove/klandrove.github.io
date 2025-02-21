@@ -238,10 +238,11 @@ a{
 
 .my-work{
     background-color: #F97746;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: bottom;
+    padding-bottom: 2vh;
 }
 
 .my-work h2{
