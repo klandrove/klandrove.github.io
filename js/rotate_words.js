@@ -1,4 +1,4 @@
-const words = ["web developer", "UX/UI designer", "creative coder", "creative technologist"];
+const words = ["web developer", "creative coder", "creative technologist"];
 let wordIndex = 0;
 const wordElement = document.getElementById("title");
 
@@ -7,6 +7,7 @@ function createLetters(word) {
   const letters = word.split("").map((char, index) => {
     const letterElement = document.createElement("span");
     letterElement.classList.add("letter");
+    letterElement.classList.add("green");
     letterElement.style.left = `${index * 20}px`;
     letterElement.textContent = char;
     return letterElement;

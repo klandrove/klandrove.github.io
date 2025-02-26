@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Londrina+Solid:wght@100;300;400;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style/about.css">
     <title>Kaitlyn Landrove</title>
 </head>
 <body>
-    <script src="cursor.js"></script>
+    <script src="js/cursor.js"></script>
     <nav>
-        <a class="nav-item hover-underline-animation left" href="./about.html">About Me</a>
-        <a class="nav-item hover-underline-animation left" href="./projects/">Projects</a>
-        <a class="brand" href="./">            
-            <img class="logo" src="logo.png" alt="Kaitlyn Landrove Logo">
-        </a>
-        <a class="nav-item hover-underline-animation left" href="./contact/">Contact Me</a>
-        <a class="nav-item hover-underline-animation left" href="./resume/">Resume</a> 
+        <div>
+            <a class="brand" href="./">            
+                <h1>KAITLYN LANDROVE</h1>
+            </a>
+        </div>
+        <div class="nav-right">
+            <a class="nav-item hover-underline-animation left" href="./about.html">About Me</a>
+            <a class="nav-item hover-underline-animation left" href="./projects/">Projects</a>
+            <a class="nav-item hover-underline-animation left" href="./contact/">Contact Me</a>
+            <a class="nav-item hover-underline-animation left" href="./resume/">Resume</a> 
+        </div>
     </nav>
     <!-- Hover animation from: https://www.30secondsofcode.org/css/s/hover-underline-animation/-->
     <!-- Flower from: https://dev.to/munimiftikhar/learn-to-create-flowers-grid-in-css-g6l -->
@@ -69,7 +73,7 @@
     <div class="body-content">
         <div class="headshot-container">
             <div class="blob"></div>
-            <img class="headshot" src="Headshot.jpg" alt="">
+            <img class="headshot" src="../assets/Headshot.jpg" alt="">
         </div>
         <div class="bio">
             <h1>About Me</h1>
@@ -83,11 +87,15 @@
             </p>
         </div>
     </div>
-    <div class="contact">
-        <h3 class="contact-me">Contact Me!</h3>
-        <address class="contact-info">
-            Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
-            Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="120" viewBox="0 0 1728 119" fill="none" style="width: 100%; height: auto;">
+            <path d="M-61 15.6L-1.36667 18.4819C58.2667 21.5813 177.533 27.0187 296.8 38.8181C416.067 50.4 535.333 67.8 654.6 67.8C773.867 67.8 893.133 50.4 1012.4 33C1131.67 15.6 1250.93 -1.8 1370.2 1.08188C1489.47 4.18125 1608.73 27.0187 1668.37 38.8181L1728 50.4V120H1668.37C1608.73 120 1489.47 120 1370.2 120C1250.93 120 1131.67 120 1012.4 120C893.133 120 773.867 120 654.6 120C535.333 120 416.067 120 296.8 120C177.533 120 58.2667 120 -1.36667 120H-61V15.6Z" fill="#FF97C6"/>
+            </svg>
+        <div class="contact">
+            <h3 class="contact-me">Contact Me!</h3>
+            <address class="contact-info">
+                Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
+                Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
             LinkedIn: <a class= "hover-underline-animation left" href="https://www.linkedin.com/in/kaitlyn-landrove/">Kaitlyn Landrove</a>
         </address>
     </div>
