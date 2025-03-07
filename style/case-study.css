@@ -9,7 +9,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2vh;
-    max-width: 100%;
+    max-width: 80vw;
+    margin: 0 20vw;
 }
 
 .section-name {
@@ -19,7 +20,7 @@
 
 .description {
     grid-column: 2;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
     display: flex;
     flex-direction: column;
 }
@@ -101,4 +102,17 @@ img {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.centered-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.centered-column a {
+    color: #000000;
+    text-decoration: underline;
 }

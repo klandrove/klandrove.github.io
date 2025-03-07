@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style/case-study.css">
     <link rel="stylesheet" href="../style/timeline.css">
     <link rel="stylesheet" href="../style/slideshow.css">
-    <title>TropicTone</title>
+    <title>The Decor Den</title>
 </head>
 <body>
     
@@ -26,15 +26,15 @@
             <a class="nav-item hover-underline-animation left" href="../contact.html">Contact Me</a>
         </div>
     </nav>
-    <h1 class="project-name">TropicTone</h1>
+    <h1 class="project-name">The Decor Den</h1>
     <div class="basic-info">
         <div class="basic-info-text">
-            <p>Type: Physical Prototype</p>
-            <p>A 3D-printed a steel pan embedded with touch-sensitive sensors that trigger musical notes on a website while also inputting a keycode to a laptop. Using an Adafruit Metro M4 microcontroller, this interactive instrument blends digital and physical elements to create a unique musical experience.</p>
+            <p>Type: Website</p>
+            <p>A Bootstrap-based online retail site for The Decor Den, a home decor store offering stylish and curated pieces for every space. The website focuses on a seamless shopping experience, blending aesthetic design with user-friendly functionality.</p>
         </div>
         <div class="final-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ol-RKdVQaCU?si=04mgnYjOVIEc5T7l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/38cSqB4wEEg?si=OQfVg4SucowNY5jK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>        
     </div>
     <hr>
     <div class="info-grid">
@@ -43,12 +43,12 @@
         </div>
         <div class="description">
             <p>
-                I have always loved the music and culture of the Caribbean. One thing that has always fascinated me is the steel drum, or steelpan. Steelpans originated in Trinidad and Tobago and are the backbone of stereotypical Caribbean music. I always wanted to learn more about how they work, so I wanted to make an electric version.
+                Online shopping has taken over the retail industry, with many consumers preferring the convenience of shopping from home. The Decor Den is a home decor store that offers a variety of stylish and curated pieces for every space. The website was designed to provide a seamless shopping experience, blending aesthetic design with user-friendly functionality.
             </p>
             <p>
-                During one of my classes, the idea of using MIDI with the Adafruit was discussed as a potential avenue for our projects. However, due to my lack of musical knowledge, I determined that utilizing MIDI was not my best route. The concept of using the Adafruit Circuit Playground Express as a HID, human interface device, intrigued me. I realized with the use of capacitive touch, an online steelpan keyboard, and the HID library, I could create a steelpan.
+                The website contains the basics of an online retail site, including a homepage, product pages, and a shopping cart. The homepage features a carousel of featured products, while the product pages display product images, descriptions, and prices. Users can add items to their shopping cart and proceed to checkout.
             </p>
-            <img src="../assets/images/tropictone/real-drum.jpg" alt="real steel drum image">
+            <img src="../assets/images/The Decor Den/real-drum.jpg" alt="real steel drum image">
         </div>
         <div class="section-name">
             <h3>Early Physical Design</h3>
@@ -69,7 +69,7 @@
             <p>
                 It was planned to use the Adafruit Circuit Playground Express with the 7 capacitive touch pads. However, I quickly learned that some steelpans have 11 notes. In order to better replicate the 11 notes, it was decided to use the Adafruit Metro M0 Express, which has 12 digital input pins. Each digital pin was associated to a note.
             </p>
-            <img src="../assets/images/tropictone/Adafruit Metro M0.jpg" alt="">
+            <img src="../assets/images/The Decor Den/Adafruit Metro M0.jpg" alt="">
             <p>
                 Instead of capacitive touch, a switch-to-ground approach was used. Male to alligator clip wires were connected to digital pins 1-5 and 7-12 and a ground pin. When the ground wire makes contact with a digital pin wire, the board registers that pin as "False". The resting state is "True" when the wires are not touching.
             </p>
@@ -87,7 +87,7 @@
             <p>
                 The keyboard has a steelpan feature, providing the perfect source for the output of the island notes.
             </p>
-            <img src="../assets/images/tropictone/Keyboard.png" alt="">
+            <img src="../assets/images/The Decor Den/Keyboard.png" alt="">
         </div>
         <div class="section-name">
             <h3>Human Interface Device (HID)</h3>
@@ -182,7 +182,7 @@
         <div class="description split">
             <div>
 
-                <img src="../assets/images/tropictone/Drum2.png" alt="">
+                <img src="../assets/images/The Decor Den/Drum2.png" alt="">
                 <p>
                     Steelpan
                 </p>
@@ -192,7 +192,7 @@
             </div>
             <div>
 
-                <img src="../assets/images/tropictone/Mallet2.png" alt="">
+                <img src="../assets/images/The Decor Den/Mallet2.png" alt="">
                 <p>
                     Mallet
                 </p>
@@ -218,31 +218,31 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides">
-                  <img src="../assets/images/tropictone/holes-top.jpg" style="width:100%">
+                  <img src="../assets/images/The Decor Den/holes-top.jpg" style="width:100%">
                 </div>
               
                 <div class="mySlides">
-                  <img src="../assets/images/tropictone/holes-bottom.jpg" style="width:100%">
+                  <img src="../assets/images/The Decor Den/holes-bottom.jpg" style="width:100%">
                 </div>
               
                 <div class="mySlides">
-                  <img src="../assets/images/tropictone/wiring.jpg" style="width:100%">
+                  <img src="../assets/images/The Decor Den/wiring.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <img src="../assets/images/tropictone/mallets.jpg" style="width:100%">
+                    <img src="../assets/images/The Decor Den/mallets.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <img src="../assets/images/tropictone/clips-and-tacks.jpg" style="width:100%">
+                    <img src="../assets/images/The Decor Den/clips-and-tacks.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <img src="../assets/images/tropictone/mallets-wire.jpg" style="width:100%">
+                    <img src="../assets/images/The Decor Den/mallets-wire.jpg" style="width:100%">
                 </div>
         
                 <div class="mySlides">
-                    <img src="../assets/images/tropictone/painted-labeled.jpg" style="width:100%">
+                    <img src="../assets/images/The Decor Den/painted-labeled.jpg" style="width:100%">
                 </div>
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -348,10 +348,10 @@
         </div>
         <div class="description">
             <p>
-                TropicTone is a digital recreation of a steelpan, a traditional Caribbean instrument, using a 3D-printed model and an Adafruit Metro M0 Express microcontroller. The project translates physical interactions into musical notes played on a virtual steelpan keyboard.
+                The Decor Den is a digital recreation of a steelpan, a traditional Caribbean instrument, using a 3D-printed model and an Adafruit Metro M0 Express microcontroller. The project translates physical interactions into musical notes played on a virtual steelpan keyboard.
             </p>
             <p>
-                TropicTone successfully bridges the gap between physical interaction and digital music production, providing an interactive way to play steelpan music through touch-based inputs.
+                The Decor Den successfully bridges the gap between physical interaction and digital music production, providing an interactive way to play steelpan music through touch-based inputs.
             </p>
         </div>
     </div>
