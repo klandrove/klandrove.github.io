@@ -19,6 +19,7 @@
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
+        padding-top: 5rem;
     }
     #home .cs-content {
         /* set text align to left if content needs to be left aligned */
