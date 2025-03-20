@@ -8,6 +8,7 @@
         padding: var(--sectionPadding);
         /* clips the red box from causing overflow issues */
         overflow: hidden;
+        padding-bottom: 0rem;
     }
     #home .cs-container {
         width: 100%;
