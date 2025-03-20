@@ -1,0 +1,498 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TropicTone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/content.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="stylesheet" href="../styles/steps.css">
+</head>
+<body>
+        
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="../" class="cs-logo" aria-label="back to home">
+                <h2>Kaitlyn Landrove</h2>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="../" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#projects" class="cs-li-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#contactme" class="cs-li-link">
+                                Contact Me
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="about.html" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+<!-- ============================================ -->
+<!--                    Header                    -->
+<!-- ============================================ -->
+    <section id="projects">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Physical Computing</span>
+                <h3 class="cs-title">TropicTone</h3>
+                <p class="cs-text" style="width: 70%; max-width: 80rem;">
+                    A 3D-printed a steelpan embedded with <strong>touch-sensitive sensors</strong> that trigger musical notes on a website while also inputting a keycode to a laptop. Using an <strong>Adafruit Metro M4 microcontroller</strong>, this interactive instrument blends digital and physical elements to create a unique musical experience.
+                </p>
+            </div>
+        </div> 
+    </section>
+
+<!-- ============================================ -->
+<!--                   Video                      -->
+<!-- ============================================ -->
+
+    <section id="video-1314" style="padding-top: 0;">
+        <video class="cs-big-link" controls>
+            <source src="..\assets\images\tropictone\Final.MOV" type="video/mp4">
+          </video>
+    </section>
+
+<!-- ============================================ -->
+<!--                    Content                   -->
+<!-- ============================================ -->
+
+    <section id="picture-right" style="padding-top: 0;">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://davesislandinstruments.com/cdn/shop/files/IMG_7662.jpg?v=1732219235">
+                <source media="(min-width: 601px)" srcset="https://davesislandinstruments.com/cdn/shop/files/IMG_7662.jpg?v=1732219235">
+                <img loading="lazy" decoding="async" src="https://davesislandinstruments.com/cdn/shop/files/IMG_7662.jpg?v=1732219235" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <h3>Idea Conception</h3>
+                <p class="cs-text">
+                    I have always loved the music and culture of the Caribbean. One thing that has always fascinated me is the steel drum, or steelpan. Steelpans originated in Trinidad and Tobago and are the backbone of stereotypical Caribbean music. I always wanted to learn more about how they work, so I wanted to make an electric version. 
+                </p>
+                <p class="cs-text">
+                    The concept of using the Adafruit Circuit Playground Express as a HID, human interface device, intrigued me. I realized with the use of capacitive touch, an online steelpan keyboard, and the HID library, I could create a steelpan.
+                </p>     
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>Early Physical Design</h3>
+                <p class="cs-text">
+                    I immediately began creating a bowl-like shape on <strong>OnShape</strong> to mimic the steelpan's shape.
+                </p>
+                <p class="cs-text">
+                    I also created a mallet design, consisting of a cylinder with a wider cylinder at the top. The edges were fileted to create a smoother and rounder appearance. The mallets also were designed with a small hole going through the handle and the top, to allow for a wire to be passed through.
+                </p>  
+            </div>
+        </div>
+    </section>
+                                
+    <section id="picture-right">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://www.thestkittsnevisobserver.com/wp-content/uploads/IMG_6016-Large-620x465-2.jpg">
+                <source media="(min-width: 601px)" srcset="https://www.thestkittsnevisobserver.com/wp-content/uploads/IMG_6016-Large-620x465-2.jpg">
+                <img loading="lazy" decoding="async" src="https://www.thestkittsnevisobserver.com/wp-content/uploads/IMG_6016-Large-620x465-2.jpg" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <h3>Early Electrical Design</h3>
+                <p class="cs-text">
+                    It was planned to use the Adafruit Circuit Playground Express with the 7 capacitive touch pads. However, I quickly learned that some steelpans have 11 notes. In order to better replicate the 11 notes, it was decided to use the <strong>Adafruit Metro M0 Express</strong>, which has 12 digital input pins. Each digital pin was associated to a note.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="../assets/images/tropictone/Adafruit Metro M0.jpg">
+                <source media="(min-width: 601px)" srcset="../assets/images/tropictone/Adafruit Metro M0.jpg">
+                <img loading="lazy" decoding="async" src="../assets/images/tropictone/Adafruit Metro M0.jpg" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <p class="cs-text">
+                    Instead of capacitive touch, a <strong>switch-to-ground</strong> approach was used. Male to alligator clip wires were connected to digital pins 1-5 and 7-12 and a ground pin. When the ground wire makes contact with a digital pin wire, the board registers that pin as "False". The resting state is "True" when the wires are not touching.
+                </p>
+                <p class="cs-text">
+                    This switch from true to false provided the logic to determine when a certain digital pin was contacted, indicating a specific note was played.
+                </p>     
+            </div>
+        </div>
+    </section>
+ 
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="assets\images\tropictone\Keyboard.png">
+                <source media="(min-width: 601px)" srcset="assets\images\tropictone\Keyboard.png">
+                <img loading="lazy" decoding="async" src="assets\images\tropictone\Keyboard.png" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <h3>Output</h3>
+                <p class="cs-text">
+                    This <a href="https://igrezadecu.com/music/piano/steel_drums.htm" class="cs-content-link">website</a> features a keyboard display with a variety of instruments that can be "played" on the keyboard. The row of white keys has 11 keys, matching the 11 notes on the steelpan. Associated keys on the US keyboard layout will trigger the keys on the online piano to be pressed.
+                </p>
+                <p class="cs-text">
+                    The keyboard has a steelpan feature, providing the perfect source for the output of the island notes.
+                </p>     
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="picture-right" style="background-color: #f7f7f7;">
+        <div class="cs-container">
+            <div  class="cs-long">
+                <h3>Human Interface Device (HID)</h3>
+                <p class="cs-text">
+                    The keyboard website functions by pressing keys "A" through " ' " on the US keyboard layout. The HID library was utilized to simulate pressing on the associated key.
+                </p>
+                <p class="cs-text">
+                    Utilizing the switch-to-ground approach, multiple IF statements were created. Every pin was associated to a note on the steelpan and keyboard. Whenever a certain pin would switch from True to False, the corresponding keystroke would be signaled to be pressed.
+                </p>     
+                <p class="cs-text">
+                    For example, if the digital pin 7 switched from True to False on contact, the assocaited note to that pin is A. The A note is played by pressing the "H" key on the keyboard. Therefore, using the HID library, the keycode for H would be sent to the laptop, resulting in the A note being played on the virtual keyboard.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--               Construction Steps             -->
+<!-- ============================================ -->
+
+    <section id="why-choose-1662">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h3>Construction Steps</h3>
+            </div>
+            <div class="cs-wrapper">
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-item-number">01</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">3D print steelpan and mallets.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">02</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Find conductive material to use as contact points in the steelpan.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">03</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Open holes into steelpan using a hot nail.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">04</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Spray paint steelpan in silver.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">05</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Attach corresponding wires to the correct location for each note on the steelpan.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-item-number">06</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Thread wire through the mallets and apply copper tape to the ends to ensure full conductivity on contact.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">07</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Connect mallets to one ground pin.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">08</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Develop code.</p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">09</span>
+                        <div class="cs-item-wrapper">
+                            <p class="cs-item-text">Test code and components.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>          
+
+    
+    <section id="picture-right">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="../assets/images/tropictone/Drum2.png">
+                <source media="(min-width: 601px)" srcset="../assets/images/tropictone/Drum2.png">
+                <img loading="lazy" decoding="async" src="../assets/images/tropictone/Drum2.png" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <h3>Custom 3D Files</h3>
+                <p class="cs-text-big">
+                    Steelpan
+                </p>
+                <p class="cs-text">
+                    This design was created to mimic the shape of a steelpan. It was made by creating a bowl like side profile and revolving it around the center y axis.
+                </p>     
+            </div>
+        </div>
+        <br>
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="../assets/images/tropictone/Mallet2.png">
+                <source media="(min-width: 601px)" srcset="../assets/images/tropictone/Mallet2.png">
+                <img loading="lazy" decoding="async" src="../assets/images/tropictone/Mallet2.png" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <p class="cs-text-big">
+                    Mallet
+                </p>
+                <p class="cs-text">
+                    The mallet was made by creating a cylinder with a larger cylinder with filetted edges attached to the top. A hole was created through the whole mallet to allow for wire to be fed through.
+                </p>     
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>Construction</h3>
+                <p class="cs-text">
+                    In order to create holes in the steelpan to allow for the carpet tacks to fit through, a candle and nail were utilized. The nail was heated over the candle and pushed through the steelpan. This method was chosen to ensure the layers of the 3D print stayed melted together while creating the holes. 
+                </p>
+                <p class="cs-text">
+                    The steelpan was then spray painted with silver paint to mimic the silver appearance of a steelpan.
+                </p>  
+                <p class="cs-text">
+                    The carpet tacks were put through the holes and the alligator clips were attached on the bottom side of the drum. These alligator clips were then connected to the Adafruit in the corresponding pins.
+                </p>   
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+    <section id="gallery-1446">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <h3>Construction Images</h3>
+                </div>
+            </div>
+            <!--Gallery-->
+            <div class="cs-gallery">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/holes-top.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/holes-top.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/holes-top.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/holes-bottom.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/holes-bottom.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/holes-bottom.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/wiring.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/wiring.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/wiring.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/mallets.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/mallets.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/mallets.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/clips-and-tacks.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/clips-and-tacks.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/clips-and-tacks.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/mallets-wire.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/mallets-wire.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/mallets-wire.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 7-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="../assets/images/tropictone/painted-labeled.jpg">
+                    <source media="(min-width: 601px)" srcset="../assets/images/tropictone/painted-labeled.jpg">
+                    <img loading="lazy" decoding="async" src="../assets/images/tropictone/painted-labeled.jpg" alt="gallery" width="305" height="400">
+                </picture>
+            </div>
+        </div>
+    </section>
+    
+    <section id="picture-left">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>Iteration</h3>
+                <p class="cs-text">
+                    After finalizing the functionality of the steelpan, I decided to focus on accessory features. I created walls to encapsulate the wires of the steelpan. These walls were 3D printed and hot glued together.
+                </p>
+                <p class="cs-text">
+                    Outside of audio feedback, I wanted visual feedback to reflect the note played by users. I also utilized a <strong>8x8 Neopixel Matrix</strong> to create a "screen" where the note played by users would be illuminated.
+                </p>     
+                <p class="cs-text">
+                    In order to create this screen, I had to manually input which pixels should be illuminated for each note. This was stored in an array of 0s and 1s where each element in the array is a row of neopixels. A draw function was created and called in the IF statements to draw the letter whenever a note was played.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-right">
+        <div class="cs-container-video">
+            <div class="cs-content-video">
+                <h3>1st Iteration</h3>
+                <video controls>
+                    <source src="..\assets\images\tropictone\1st Complete.MOV" type="video/mp4">
+                </video>
+            </div>
+            <div class="cs-content-video">
+                <h3>Matrix Trial</h3>
+                <video controls>
+                    <source src="..\assets\images\tropictone\Trial Matrix.MOV" type="video/mp4">
+                </video>    
+            </div>
+        </div>
+    </section>  
+    
+    <section id="picture-left">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h3>Challenges</h3>
+                <ul class=cs-ul>
+                    <li class="cs-li">3D prints failed, delaying construction of project</li>
+                    <li class="cs-li">Difficulties opening holes into the steelpan</li>
+                    <li class="cs-li">Wires connecting the mallets were initially too thin, not allowing the signal to properly pass</li>
+                    <li class="cs-li">Attempted to use MIDI, but did not understand music terms and did not like the synthetic sounds</li>
+                </ul>  
+            </div>
+            <div class="cs-content">
+                <h3>Summary</h3>
+                <p class="cs-text">
+                    TropicTone is a digital recreation of a steelpan, a traditional Caribbean instrument, using a 3D-printed model and an Adafruit Metro M0 Express microcontroller. The project translates physical interactions into musical notes played on a virtual steelpan keyboard.
+                </p>
+                <p class="cs-text">
+                    TropicTone successfully bridges the gap between physical interaction and digital music production, providing an interactive way to play steelpan music through touch-based inputs.
+                </p>     
+            </div>
+        </div>
+        <div class="cs-container">
+            <div class="cs-content" style="align-items: flex-end;">
+                <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fklandrove%2FPortfolio%2Fblob%2Fmain%2FTropicTune%2Fcode&sa=D&sntz=1&usg=AOvVaw0zxZvD_0qyrc7Hk63d6GJK" class="cs-button-solid" target="_blank" rel="noopener">Code</a>
+            </div>
+            <div class="cs-content" style="align-items: flex-start;">
+                <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fklandrove%2FPortfolio%2Ftree%2Fmain%2FTropicTune%2F3d&sa=D&sntz=1&usg=AOvVaw1NXr9MhYrfiN9al6wH2558" class="cs-button-solid" target="_blank" rel="noopener">3D Files</a>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+    <footer id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <h3>Kaitlyn Landrove</h3>
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="../#home" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href=".../projects.html" class="cs-link">Projects</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../about.html" class="cs-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="https://www.linkedin.com/in/kaitlyn-landrove" class="cs-social-link" aria-label="linkedin" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="mailto:kmlandrove04@gmail.com" class="cs-social-link" aria-label="email" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-social-link" aria-label="resume" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=23882&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <p class="cs-icon-legal">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            </div>
+        </div>
+    </footer>
+                            
+<script src="index.js"></script>
+
+</body>
+</html>

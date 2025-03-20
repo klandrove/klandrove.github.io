@@ -1,0 +1,94 @@
+/*-- -------------------------- -->
+<---        Why Choose Us       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #why-choose-1662 {
+      padding: var(--sectionPadding);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    #why-choose-1662 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #why-choose-1662 .cs-content {
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #why-choose-1662 .cs-title {
+      margin: 0;
+      max-width: 23ch;
+    }
+    #why-choose-1662 .cs-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* 16px - 32px */
+      gap: clamp(1rem, 3.2vw, 2rem);
+    }
+    #why-choose-1662 .cs-card-group {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      /* 16px - 32px */
+      gap: clamp(1rem, 2vw, 2rem);
+    }
+    #why-choose-1662 .cs-item {
+      list-style: none;
+      /* prevents padding from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    #why-choose-1662 .cs-item-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    #why-choose-1662 .cs-item-number {
+      font-family: var(--headingFont);
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      margin: 0;
+      color: var(--blue);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    #why-choose-1662 .cs-item-text {
+      font-family: var(--bodyFont);
+      font-size: 1rem;
+      line-height: 1.5em;
+      margin: 0;
+      color: var(--black);
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #why-choose-1662 .cs-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+                                  

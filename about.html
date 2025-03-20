@@ -3,102 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style/about.css">
-    <title>Kaitlyn Landrove</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
-    <script src="js/cursor.js"></script>
-    <nav>
-        <div>
-            <a class="brand" href="../">            
-                <h1>KAITLYN LANDROVE</h1>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="../" class="cs-logo" aria-label="back to home">
+                <h2>Kaitlyn Landrove</h2>
             </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="../" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../projects.html" class="cs-li-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#contact" class="cs-li-link">
+                                Contact Me
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="about.html" class="cs-li-link  cs-active">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="nav-right">
-            <a class="nav-item hover-underline-animation left" href="../my-work.html">My Work</a>
-            <a class="nav-item hover-underline-animation left" href="../about.html">About Me</a>
-            <a class="nav-item hover-underline-animation left" href="../contact.html">Contact Me</a>
-        </div>
-    </nav>
-    <!-- Hover animation from: https://www.30secondsofcode.org/css/s/hover-underline-animation/-->
-    <!-- Flower from: https://dev.to/munimiftikhar/learn-to-create-flowers-grid-in-css-g6l -->
+    </header>
 
-    <div id="flower-container">
-        <div class="flower">
-            <div class="petal">
-                  <div class="circle"></div>
-                  <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-            <div class="petal">
-                <div class="circle"></div>
-                <div class="triangle"></div>
-            </div>
-        </div>
-    </div>
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    
+    <section id="about">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="Headshot.jpg">
+                    <source media="(min-width: 601px)" srcset="Headshot.jpg">
+                    <img loading="lazy" decoding="async" src="Headshot.jpg" alt="cleaner" width="630" height="630" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <span class="cs-desc">That's<br>me!</span>
+                </div>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">About Me</span>
+                <h2 class="cs-title">Practical Creative Technologist</h2>
+                <p class="cs-text">
+                    I was born and raised in South Florida, proudly embracing my Cuban heritage, including the language and traditions passed down by my grandparents. I earned a Bachelor of Science in Computer Science and Interactive Media from the University of Miami.
+                </p>
+                <p class="cs-text"> 
+                    I am passionate about creating unique and accessible user experiences on the web, whether from scratch in an empty HTML file or using frameworks such as Bootstrap. I have knowledge of full-stack development, a variety of data analytic tools, quality assurance principles, and scrum methodologies.
+                </p>
+                <p class="cs-text">
+                    As the Vice President of Marketing for Kappa Theta Pi Sigma Chapter, a professional technology fraternity, I frequently collaborate with diverse individuals who share a passion for technology. Outside of class, you can find me at sporting events, especially baseball and hockey games. Sometimes, you may even find me on the field as a ball girl!
+                </p>
+                <p class="cs-text">
+                    I am always eager to learn and take on new challenges, striving to blend creativity with technical skills to build engaging digital experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+                                    
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
 
-    <div class="body-content">
-        <div class="headshot-container">
-            <div class="blob"></div>
-            <img class="headshot" src="../assets/Headshot.jpg" alt="">
+    <footer id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <h3>Kaitlyn Landrove</h3>
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="../#home" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../projects.html" class="cs-link">Projects</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../about.html" class="cs-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="https://www.linkedin.com/in/kaitlyn-landrove" class="cs-social-link" aria-label="linkedin" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="mailto:kmlandrove04@gmail.com" class="cs-social-link" aria-label="email" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-social-link" aria-label="resume" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=23882&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <p class="cs-icon-legal">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            </div>
         </div>
-        <div class="bio">
-            <h1>About Me</h1>
-            <p class="top-p">I was born and raised in South Florida, proudly embracing my Cuban descent, including the language and traditions passed down by my grandparents. I am in my final semester at the University of Miami, where I will graduate in May with a Bachelor of Science in Computer Science and Interactive Media. 
-            </p>
-            <p class="top-p">I am passionate about creating unique and accessible user experiences on the web, whether from scratch in an empty HTML file or using frameworks such as Bootstrap. I have knowledge of full-stack development, a variety of data analytic tools, quality assurance principles, and scrum methodologies. 
-            </p>
-            <p>As the Vice President of Marketing for Kappa Theta Pi Sigma Chapter, a professional technology fraternity, I frequently collaborate with diverse individuals who share a passion for technology. When not experimenting with Figma or Adobe Creative Cloud products, you can find me at sporting events, especially baseball and hockey games. Sometimes, you may even find me on the field as a ball girl!
-            </p>
-            <p class="last-p">I am always eager to learn and take on new challenges, striving to blend creativity with technical skills to build engaging digital experiences.
-            </p>
-        </div>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="120" viewBox="0 0 1728 119" fill="none" style="width: 100%; height: auto;">
-            <path d="M-61 15.6L-1.36667 18.4819C58.2667 21.5813 177.533 27.0187 296.8 38.8181C416.067 50.4 535.333 67.8 654.6 67.8C773.867 67.8 893.133 50.4 1012.4 33C1131.67 15.6 1250.93 -1.8 1370.2 1.08188C1489.47 4.18125 1608.73 27.0187 1668.37 38.8181L1728 50.4V120H1668.37C1608.73 120 1489.47 120 1370.2 120C1250.93 120 1131.67 120 1012.4 120C893.133 120 773.867 120 654.6 120C535.333 120 416.067 120 296.8 120C177.533 120 58.2667 120 -1.36667 120H-61V15.6Z" fill="#FF97C6"/>
-            </svg>
-        <div class="contact">
-            <h3 class="contact-me">Contact Me!</h3>
-            <address class="contact-info">
-                Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
-                Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
-            LinkedIn: <a class= "hover-underline-animation left" href="https://www.linkedin.com/in/kaitlyn-landrove/">Kaitlyn Landrove</a>
-        </address>
-    </div>
-    
-    <!-- <script src="create_flowers.js"></script> -->
+    </footer>
+                            
+<script src="index.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,110 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+</head>
+<body>
+        
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="../" class="cs-logo" aria-label="back to home">
+                <h2>Kaitlyn Landrove</h2>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="../" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#projects" class="cs-li-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#contact" class="cs-li-link">
+                                Contact Me
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="about.html" class="cs-li-link  cs-active">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+    <footer id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <h3>Kaitlyn Landrove</h3>
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="../#home" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../#projects" class="cs-link">Projects</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../about.html" class="cs-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="https://www.linkedin.com/in/kaitlyn-landrove" class="cs-social-link" aria-label="linkedin" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="mailto:kmlandrove04@gmail.com" class="cs-social-link" aria-label="email" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-social-link" aria-label="resume" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=23882&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <p class="cs-icon-legal">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            </div>
+        </div>
+    </footer>
+                            
+    <script src="index.js"></script>
+
+</body>
+</html>

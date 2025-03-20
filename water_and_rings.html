@@ -1,0 +1,229 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterand Rings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/content.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+</head>
+<body>
+        
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="../" class="cs-logo" aria-label="back to home">
+                <h2>Kaitlyn Landrove</h2>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="../" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#projects" class="cs-li-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#contactme" class="cs-li-link">
+                                Contact Me
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="about.html" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+<!-- ============================================ -->
+<!--                    Header                    -->
+<!-- ============================================ -->
+    <section id="projects">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">EXPERIMENTAL WEB GAME</span>
+                <h3 class="cs-title">Water and Rings</h3>
+                <p class="cs-text" style="width: 70%; max-width: 80rem;">
+                    A Figma prototype for an online shopping experience that simplifies finding items in your size. The app would feature a virtual avatar, allowing users to try on clothing digitally before making a purchase.
+                </p>
+            </div>
+        </div> 
+    </section>
+
+    
+<!-- ============================================ -->
+<!--                   Video                      -->
+<!-- ============================================ -->
+
+    <section id="video-1314" style="padding-top: 0;">
+        <video class="cs-big-link" controls>
+            <source src="..\assets\images\water_and_rings\Water Ring Game Final.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
+<!-- ============================================ -->
+<!--                    Content                   -->
+<!-- ============================================ -->
+
+    <section id="picture-left" style="padding-top: 0;">
+        <div class="cs-container">\
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="..\assets\images\water_and_rings\Toy.png">
+                <source media="(min-width: 601px)" srcset="..\assets\images\water_and_rings\Toy.png">
+                <img loading="lazy" decoding="async" src="..\assets\images\water_and_rings\Toy.png" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <h3>Idea Conception</h3>
+                <p class="cs-text">
+                    The inspiration for this game comes from the classic analog water ring toss toys, where players press buttons to generate water currents that push floating rings upward, aiming to land them onto prongs. This simple yet engaging mechanic relies on physics, patience, and precision, making it a nostalgic yet timeless challenge. 
+                </p>    
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-right">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>Digital Concept</h3>
+                <p class="cs-text">
+                    In adapting this concept into a digital format, the goal is to retain the tactile feel of the original while introducing interactive elements that enhance the experience. Players will control two virtual buttons, each corresponding to a water jet positioned at the base of the tank. Pressing these buttons releases a stream of water, propelling the rings into motion. The challenge lies in mastering the force and timing of the water currents to guide the rings onto the prongs.
+                </p> 
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>Libraries</h3>
+                <ul class=cs-ul>
+                    <li class="cs-li">Three.js</li>
+                    <li class="cs-li">Ammo.js</li>
+                </ul>  
+            </div>
+        </div>
+    </section>
+                
+    <section id="picture-right">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h3>Challenges</h3>
+                <ul class=cs-ul>
+                    <li class="cs-li">Ammo.js has limited 3D shapes, which does not include a torus. In order to create a torus style collision box, multiple spheres had to be arranged in the shape of a torus. This leads to issues with collisions on the prongs</li>
+                    <li class="cs-li">Raycasting has issues on mobile due to native functions on tapping the screen.</li>
+                </ul>  
+            </div>
+            <div class="cs-content">
+                <h3>Future Improvements</h3>
+                <p class="cs-text">
+                    ONE
+                </p>
+                <p class="cs-text">
+                    TWO
+                </p>     
+            </div>
+        </div>
+        <div class="cs-container">
+            <div class="cs-content" style="align-items: flex-end;">
+                <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fklandrove%2Fwater_and_rings&sa=D&sntz=1&usg=AOvVaw08gyIRTleTX3sxd16drCw5" class="cs-button-solid" target="_blank" rel="noopener">Code</a>
+            </div>
+            <div class="cs-content" style="align-items: flex-start;">
+                <a href="#game" id="see-game-btn" class="cs-button-solid" target="_blank" rel="noopener">See Game</a>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- ============================================ -->
+<!--                   Game                       -->
+<!-- ============================================ -->
+
+    <section id="video-1314">
+        <iframe id = game style="display: none; border: 1px solid rgba(0, 0, 0, 0.1); width:90%; height:100vh; padding-top: 0;" src="https://kaitlynlandrove.studio/water_and_rings/" allowfullscreen></iframe>
+    </section>
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+    <footer id="footer-1147">
+        <div class="cs-container">
+            <div class="cs-top">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <h3>Kaitlyn Landrove</h3>
+                </a>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <a href="../#home" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href=".../projects.html" class="cs-link">Projects</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="../about.html" class="cs-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <!--Social-->
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="https://www.linkedin.com/in/kaitlyn-landrove" class="cs-social-link" aria-label="linkedin" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="mailto:kmlandrove04@gmail.com" class="cs-social-link" aria-label="email" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-social-link" aria-label="resume" target="_blank" rel="noopener">
+                            <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=23882&format=png&color=FFFFFF" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+                <p class="cs-icon-legal">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            </div>
+        </div>
+    </footer>
+                            
+<script src="index.js"></script>
+<script>
+    document.getElementById("see-game-btn").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevents any unintended page jumps
+        let gameFrame = document.getElementById("game");
+        gameFrame.style.display = "block"; 
+    });
+</script>
+
+
+</body>
+</html>

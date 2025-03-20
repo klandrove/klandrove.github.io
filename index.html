@@ -1,145 +1,282 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaitlyn Landrove</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/index.css">
-    <title>Kaitlyn Landrove</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/can-do.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/footer_home.css">
+    <link rel="stylesheet" href="styles/projects.css">
 </head>
 <body>
-    <script src="js/cursor.js"></script>
-    <script src="js/scroll.js"></script>
-    <nav>
-        <div>
-            <a class="brand" href="../">            
-                <h1>KAITLYN LANDROVE</h1>
+        
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="../" class="cs-logo" aria-label="back to home">
+                <h2>Kaitlyn Landrove</h2>
             </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="#home" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#projects" class="cs-li-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="#contact" class="cs-li-link">
+                                Contact Me
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="about.html" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="nav-right">
-            <a class="nav-item hover-underline-animation left" href="../my-work.html">My Work</a>
-            <a class="nav-item hover-underline-animation left" href="../about.html">About Me</a>
-            <a class="nav-item hover-underline-animation left" href="../contact.html">Contact Me</a>
-        </div>
-    </nav>
-    <!-- Hover animation from: https://www.30secondsofcode.org/css/s/hover-underline-animation/-->
-    <div class="top-container">
-        <h1>HELLO!</h1>
-    </div>
-    <div class="intro-div">
-        <div class="headshot-container">
-             <img class="headshot" src="../assets/Headshot.jpg" alt="">
-        </div>
-        <div class="intro-text">
-            <div class="im-a">
-                <h2 class="coral">I'm a</h2>
-                <h2 id="title" class="green"></h2>
+    </header>
+
+<!-- ============================================ -->
+<!--                     Home                     -->
+<!-- ============================================ -->
+
+    <section id="home">
+        <div class="cs-container">
+            <div class="cs-wrapper">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale">
+                    <source media="(min-width: 601px)" srcset="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale">
+                    <img loading="lazy" decoding="async" src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Brown&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Pale" alt="body builder" width="500" height="552" aria-hidden="true">
+                </picture>
             </div>
-            <p>I have a degree in Computer Science and Interactive Media from the University of Miami. I combine coding with creativity and am passionate about designing interactive websites, apps, and digital experiences. Now, I’m looking for opportunities as a front-end or web developer!</p>
-        </div>
-    </div>
-    <div>
-        <div class="what-i-can-do">
-            <h2 class="green">What I can do:</h2>
-            <div class="skills-container">
-                <div style="width: 70vw; height: 0px; left: 15vw; top: 120px; position: absolute; border: 6px #FFF9F1 solid"></div>
-                <div class="skill">
-                    <div class="circle"></div>
-                    <p>Research</p>
-                </div>
-                <div class="skill">
-                    <div class="circle"></div>
-                    <p>Design</p>
-                </div>
-                <div class="skill front-end-container">
-                    <div class="circle" id="front-end"></div>
-                    <p class="front-end-text">Front-End</p>
-                </div>
-                <div class="skill">
-                    <div class="circle"></div>
-                    <p>Back-End</p>
-                </div>
-            </div>       
-            <div class="want-to-do">
-                <p class="green">What I would love to do</p>
-            </div>     
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="196" viewBox="0 0 1728 196" fill="none" style="transform: rotate(1deg); margin-top: -20px; margin-left: -0.1vw">
-            <path d="M1742.34 149.555L1682.64 146.467C1622.94 143.068 1503.56 137.36 1384.01 122.539C1264.47 108.029 1144.79 85.1848 1025.54 87.2663C906.293 89.3478 787.48 116.355 668.667 143.362C549.853 170.37 431.04 197.377 311.719 195.33C192.393 192.972 72.5735 162.338 12.6543 146.476L-47.2597 130.925L-49 31.2224L10.6243 30.1816C70.2486 29.1409 189.497 27.0594 308.746 24.9779C427.994 22.8964 547.243 20.8149 666.491 18.7334C785.74 16.6519 904.988 14.5704 1024.24 12.4889C1143.49 10.4075 1262.73 8.32596 1381.98 6.24447C1501.23 4.16298 1620.48 2.08149 1680.1 1.04075L1739.73 0L1742.34 149.555Z" fill="#ffd2d9"/>
-        </svg>
-        <div>
-            <div class="my-work">
-                <h2 class="coral">Check out some of my work!</h2>
+            <div class="cs-content">
+                <span class="cs-topper">HELLO, I'M KAITLYN!</span>
+                <h2 class="cs-title">I'M A FRONT-END DEVELOPER</h2>
+                <p class="cs-text">
+                    I create engaging websites, apps, and digital experiences that blend technology with creativity. My work focuses on seamless user experiences, thoughtful design, and innovative web interactions.
+                </p>
+                <!-- <a class="cs-button-solid" aria-label="check out my projects" href="../projects.html">My Work</a> -->
             </div>
+        </div>
+    </section>
+                
+<!-- ============================================ -->
+<!--                  Projects                    -->
+<!-- ============================================ -->
+
+<section id="projects">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">PROJECTS</span>
+            <h2 class="cs-title">Check Out My Work!</h2>
+            <p class="cs-text">
+                From experimental web games to physical computing, these projects reflect my passion for building engaging digital experiences.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="../tropictone.html" class="cs-item-link">
+                    <div class="cs-flex">
+                        <picture class="cs-wrapper">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=35849&format=png&color=274C77" alt="icon" width="70" height="70">
+                        </picture>
+                        <h3 class="cs-h3">TropicTone</h3>
+                        <p class="cs-item-text">A 3D-printed a steel pan embedded with touch-sensitive sensors.</p>
+                        <p class="cs-link">Read More</p>
+                    </div>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="..\assets\images\tropictone\final2.jpg">
+                        <source media="(min-width: 601px)" srcset="..\assets\images\tropictone\final2.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="..\assets\images\tropictone\final2.jpg" alt="tropictone" width="345" height="428">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="../space.html" class="cs-item-link">
+                    <div class="cs-flex">
+                        <picture class="cs-wrapper">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=amXjtNWVYSKP&format=png&color=274C77" alt="icon" width="70" height="70">
+                        </picture>
+                        <h3 class="cs-h3">Space Clothing</h3>
+                        <p class="cs-item-text">A Figma prototype for an online shopping experience.</p>
+                        <p class="cs-link">Read More</p>
+                    </div>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="../assets\images\space_clothing\space_apparel_home.png">
+                        <source media="(min-width: 601px)" srcset="../assets\images\space_clothing\space_apparel_home.png">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="../assets\images\space_clothing\space_apparel_home.png" alt="grass" width="345" height="428">
+                    </picture>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="../water_and_rings.html" class="cs-item-link">
+                    <div class="cs-flex">
+                        <picture class="cs-wrapper">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=39854&format=png&color=274C77" alt="icon" width="70" height="70">
+                        </picture>
+                        <h3 class="cs-h3">Water and Rings</h3>
+                        <p class="cs-item-text">An experimental Java-Script based web game.</p>
+                        <p class="cs-link">Read More</p>
+                    </div>
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="..\assets\images\water_and_rings\Screenshot.png">
+                        <source media="(min-width: 601px)" srcset="..\assets\images\water_and_rings\Screenshot.png">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="..\assets\images\water_and_rings\Screenshot.png" alt="leaves" width="345" height="428">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+  
+
+<!-- ============================================ -->
+<!--                    Can Do                    -->
+<!-- ============================================ -->
+
+    <section id="can-do">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">What I Can Do</h2>
+                <div class="cs-flex">
+                    <p class="cs-text"></p>
+                </div>
+            </div>
+            <ul class="cs-card-group"">
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://img.icons8.com/?size=100&id=60967&format=png&color=000000" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Front-End Programming</h3>
+                        <p class="cs-item-text">Creating responsive, accessible, and visually engaging web experiences using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://img.icons8.com/?size=100&id=FUR6pkVuXXrj&format=png&color=000000" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">UX/UI Design</h3>
+                        <p class="cs-item-text">Designing intuitive and user-centered interfaces with a focus on accessibility, usability, and aesthetics.</p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://img.icons8.com/?size=100&id=IttQA7rrr0RN&format=png&color=000000" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Data Analytics</h3>
+                        <p class="cs-item-text">Transforming raw data into actionable insights through visualization, statistical analysis, and data-driven storytelling.</p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="https://img.icons8.com/?size=100&id=z-Tad5z68Gro&format=png&color=000000" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Physical Computing</h3>
+                        <p class="cs-item-text">Bridging the digital and physical worlds through sensors, microcontrollers, and interactive experiences.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+    <footer id="contact">
+        <div class="cs-container">      
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="../#home">
+                    <h2 class="cs-logo">Kaitlyn Landrove</h2>
+                </a>
+                <p class="cs-text">
+                    Contact me!
+                </p>
+                <a href="mailto:kmlandrove04@gmail.com" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=FFFFFF" alt="icon" width="24" height="24">
+                    kmlandrove04@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/kaitlyn-landrove/" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF" alt="icon" width="24" height="24">
+                    LinkedIn
+                </a>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="../#home">Home</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="../about.html">About</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="#projects">Projects</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../tropictone.html">TropicTone</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../space.html">Space Clothing</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../water_and_rings.html">Water and Rings</a>
+                </li>
+            </ul>            
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">
+                <a class="cs-copyright-link" href="https://icons8.com">Icons by Icons8</a>
+            </span>
             
+            <a href="https://codestitch.app/app" class="cs-copyright-link">Components from CodeStitch</a>
         </div>
-    </div>
-    <div class="projects">
-        <a href="/websites.html" class="project">
-            <div style="width: 200px; height: 200px; position: relative">
-                <div style="width: 200px; height: 200px; left: 0px; top: 0px; position: absolute;"></div>
-                <div data-svg-wrapper style="left: 8.33px; top: 25px; position: absolute">
-                    <svg width="184" height="150" viewBox="0 0 184 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.66683 150C6.30572 150 4.32655 149.201 2.72933 147.604C1.13211 146.007 0.333496 144.028 0.333496 141.667C0.333496 139.306 1.13211 137.326 2.72933 135.729C4.32655 134.132 6.30572 133.333 8.66683 133.333H175.333C177.695 133.333 179.674 134.132 181.271 135.729C182.868 137.326 183.667 139.306 183.667 141.667C183.667 144.028 182.868 146.007 181.271 147.604C179.674 149.201 177.695 150 175.333 150H8.66683ZM25.3335 125C20.7502 125 16.8266 123.368 13.5627 120.104C10.2988 116.84 8.66683 112.917 8.66683 108.333V16.6667C8.66683 12.0833 10.2988 8.15972 13.5627 4.89583C16.8266 1.63194 20.7502 0 25.3335 0H158.667C163.25 0 167.174 1.63194 170.438 4.89583C173.702 8.15972 175.333 12.0833 175.333 16.6667V108.333C175.333 112.917 173.702 116.84 170.438 120.104C167.174 123.368 163.25 125 158.667 125H25.3335ZM25.3335 108.333H158.667V16.6667H25.3335V108.333Z" fill="#FFF9F1"/>
-                    </svg>
-                </div>
-            </div>      
-            <p>Web Development</p>
-        </a>
-        <a href="/prototypes.html" class="project">
-            <div style="width: 200px; height: 200px; position: relative">
-                <div style="width: 200px; height: 200px; left: 0px; top: 0px; position: absolute;"></div>
-                <div data-svg-wrapper style="left: 25px; top: 25px; position: absolute">
-                    <svg width="159" height="150" viewBox="0 0 159 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.6667 150C14.3056 150 12.3264 149.201 10.7292 147.604C9.13194 146.007 8.33333 144.028 8.33333 141.667V121.458C8.33333 119.236 8.75 117.118 9.58333 115.104C10.4167 113.09 11.5972 111.319 13.125 109.792L118.125 5C119.792 3.33333 121.667 2.08333 123.75 1.25C125.833 0.416667 127.917 0 130 0C132.222 0 134.34 0.416667 136.354 1.25C138.368 2.08333 140.139 3.33333 141.667 5L153.333 16.6667C155 18.1944 156.25 19.9653 157.083 21.9792C157.917 23.9931 158.333 26.1111 158.333 28.3333C158.333 30.4167 157.917 32.5 157.083 34.5833C156.25 36.6667 155 38.5417 153.333 40.2083L48.5417 145.208C47.0139 146.736 45.2431 147.917 43.2292 148.75C41.2153 149.583 39.0972 150 36.875 150H16.6667ZM25 133.333H36.6667L118.542 51.6667L112.708 45.625L106.667 39.7917L25 121.667V133.333ZM112.708 45.625L106.667 39.7917L118.542 51.6667L112.708 45.625ZM91.6667 150C101.944 150 111.458 147.431 120.208 142.292C128.958 137.153 133.333 130 133.333 120.833C133.333 116.389 132.222 112.535 130 109.271C127.778 106.007 124.861 102.986 121.25 100.208C119.306 98.8194 117.222 98.125 115 98.125C112.778 98.125 110.903 98.9583 109.375 100.625C107.847 102.292 107.083 104.34 107.083 106.771C107.083 109.201 108.056 111.111 110 112.5C111.944 114.028 113.542 115.417 114.792 116.667C116.042 117.917 116.667 119.306 116.667 120.833C116.667 124.028 114.132 126.91 109.063 129.479C103.993 132.049 98.1944 133.333 91.6667 133.333C89.3056 133.333 87.3264 134.132 85.7292 135.729C84.1319 137.326 83.3333 139.306 83.3333 141.667C83.3333 144.028 84.1319 146.007 85.7292 147.604C87.3264 149.201 89.3056 150 91.6667 150ZM50 25C50 26.9444 48.7847 28.7153 46.3542 30.3125C43.9236 31.9097 38.3333 34.7222 29.5833 38.75C18.4722 43.6111 10.7639 48.0208 6.45833 51.9792C2.15278 55.9375 0 60.8333 0 66.6667C0 70.2778 0.833333 73.4722 2.5 76.25C4.16667 79.0278 6.31944 81.4583 8.95833 83.5417C10.7639 85.0694 12.7778 85.7292 15 85.5208C17.2222 85.3125 19.0972 84.3056 20.625 82.5C22.1528 80.6944 22.8472 78.6806 22.7083 76.4583C22.5694 74.2361 21.5972 72.3611 19.7917 70.8333C18.8194 70.1389 18.0556 69.4444 17.5 68.75C16.9444 68.0556 16.6667 67.3611 16.6667 66.6667C16.6667 65 17.9167 63.3333 20.4167 61.6667C22.9167 60 28.1944 57.4306 36.25 53.9583C48.4722 48.6806 56.5972 43.8889 60.625 39.5833C64.6528 35.2778 66.6667 30.4167 66.6667 25C66.6667 17.3611 63.6111 11.2847 57.5 6.77083C51.3889 2.25694 43.3333 0 33.3333 0C27.0833 0 21.4931 1.11111 16.5625 3.33333C11.6319 5.55556 7.84722 8.26389 5.20833 11.4583C3.68056 13.2639 3.05556 15.2778 3.33333 17.5C3.61111 19.7222 4.65278 21.5278 6.45833 22.9167C8.26389 24.4444 10.2778 25.0694 12.5 24.7917C14.7222 24.5139 16.5972 23.6111 18.125 22.0833C20.0694 20.1389 22.2222 18.75 24.5833 17.9167C26.9444 17.0833 29.8611 16.6667 33.3333 16.6667C39.0278 16.6667 43.2292 17.5 45.9375 19.1667C48.6458 20.8333 50 22.7778 50 25Z" fill="#FFF9F1"/>
-                    </svg>
-                </div>
-            </div>
-            <p>UX/UI Prototyping</p>
-        </a>
-        <a href="/games.html" class="project">
-            <div style="width: 200px; height: 200px; position: relative">
-                <div style="width: 200px; height: 200px; left: 0px; top: 0px; position: absolute;"></div>
-                <div data-svg-wrapper style="left: 16.79px; top: 41.67px; position: absolute">
-                    <svg width="168" height="118" viewBox="0 0 168 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.918 117.333C14.8346 117.333 9.34852 114.868 5.45964 109.938C1.57075 105.007 0.112413 99.0001 1.08464 91.9168L9.83464 29.4168C11.0846 21.0834 14.7999 14.2084 20.9805 8.79175C27.161 3.37508 34.418 0.666748 42.7513 0.666748H125.251C133.585 0.666748 140.842 3.37508 147.022 8.79175C153.203 14.2084 156.918 21.0834 158.168 29.4168L166.918 91.9168C167.89 99.0001 166.432 105.007 162.543 109.938C158.654 114.868 153.168 117.333 146.085 117.333C143.168 117.333 140.46 116.813 137.96 115.771C135.46 114.729 133.168 113.167 131.085 111.083L112.335 92.3334H55.668L36.918 111.083C34.8346 113.167 32.543 114.729 30.043 115.771C27.543 116.813 24.8346 117.333 21.918 117.333ZM25.2513 99.4168L49.0013 75.6668H119.001L142.751 99.4168C143.029 99.6945 144.14 100.111 146.085 100.667C147.612 100.667 148.828 100.215 149.73 99.3126C150.633 98.4098 150.946 97.1945 150.668 95.6668L141.501 31.5001C140.946 27.4723 139.14 24.1042 136.085 21.3959C133.029 18.6876 129.418 17.3334 125.251 17.3334H42.7513C38.5846 17.3334 34.9735 18.6876 31.918 21.3959C28.8624 24.1042 27.0569 27.4723 26.5013 31.5001L17.3346 95.6668C17.0569 97.1945 17.3694 98.4098 18.2721 99.3126C19.1749 100.215 20.3902 100.667 21.918 100.667C22.1957 100.667 23.3069 100.25 25.2513 99.4168ZM125.668 67.3334C128.029 67.3334 130.008 66.5348 131.605 64.9376C133.203 63.3404 134.001 61.3612 134.001 59.0001C134.001 56.639 133.203 54.6598 131.605 53.0626C130.008 51.4654 128.029 50.6668 125.668 50.6668C123.307 50.6668 121.328 51.4654 119.73 53.0626C118.133 54.6598 117.335 56.639 117.335 59.0001C117.335 61.3612 118.133 63.3404 119.73 64.9376C121.328 66.5348 123.307 67.3334 125.668 67.3334ZM109.001 42.3334C111.362 42.3334 113.342 41.5348 114.939 39.9376C116.536 38.3404 117.335 36.3612 117.335 34.0001C117.335 31.639 116.536 29.6598 114.939 28.0626C113.342 26.4654 111.362 25.6667 109.001 25.6667C106.64 25.6667 104.661 26.4654 103.064 28.0626C101.467 29.6598 100.668 31.639 100.668 34.0001C100.668 36.3612 101.467 38.3404 103.064 39.9376C104.661 41.5348 106.64 42.3334 109.001 42.3334ZM48.5846 52.7501V61.0834C48.5846 62.889 49.1749 64.382 50.3555 65.5626C51.536 66.7431 53.0291 67.3334 54.8346 67.3334C56.6402 67.3334 58.1332 66.7431 59.3138 65.5626C60.4944 64.382 61.0846 62.889 61.0846 61.0834V52.7501H69.418C71.2235 52.7501 72.7166 52.1598 73.8971 50.9793C75.0777 49.7987 75.668 48.3056 75.668 46.5001C75.668 44.6945 75.0777 43.2015 73.8971 42.0209C72.7166 40.8404 71.2235 40.2501 69.418 40.2501H61.0846V31.9168C61.0846 30.1112 60.4944 28.6181 59.3138 27.4376C58.1332 26.257 56.6402 25.6667 54.8346 25.6667C53.0291 25.6667 51.536 26.257 50.3555 27.4376C49.1749 28.6181 48.5846 30.1112 48.5846 31.9168V40.2501H40.2513C38.4457 40.2501 36.9527 40.8404 35.7721 42.0209C34.5916 43.2015 34.0013 44.6945 34.0013 46.5001C34.0013 48.3056 34.5916 49.7987 35.7721 50.9793C36.9527 52.1598 38.4457 52.7501 40.2513 52.7501H48.5846Z" fill="#FFF9F1"/>
-                    </svg>
-                </div>
-            </div>
-            <p>Game Development</p>
-        </a>
-        <a href="/physical-interactions.html" class="project">
-            <div style="width: 186px; height: 186px; position: relative">
-                <div style="width: 186px; height: 186px; left: 0px; top: 0px; position: absolute;"></div>
-                <div data-svg-wrapper style="left: 15.50px; top: 7.75px; position: absolute">
-                    <svg width="156" height="164" viewBox="0 0 156 164" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M131.088 163.306C130.054 163.306 129.085 163.145 128.181 162.822C127.277 162.499 126.438 161.95 125.663 161.175L86.1375 121.65C85.3625 120.875 84.8136 120.035 84.4906 119.131C84.1677 118.227 84.0063 117.258 84.0063 116.225C84.0063 115.192 84.1677 114.223 84.4906 113.319C84.8136 112.415 85.3625 111.575 86.1375 110.8L102.606 94.3312C103.381 93.5562 104.221 93.0073 105.125 92.6844C106.029 92.3615 106.998 92.2 108.031 92.2C109.065 92.2 110.033 92.3615 110.938 92.6844C111.842 93.0073 112.681 93.5562 113.456 94.3312L152.981 133.856C153.756 134.631 154.305 135.471 154.628 136.375C154.951 137.279 155.113 138.248 155.113 139.281C155.113 140.315 154.951 141.283 154.628 142.188C154.305 143.092 153.756 143.931 152.981 144.706L136.513 161.175C135.738 161.95 134.898 162.499 133.994 162.822C133.09 163.145 132.121 163.306 131.088 163.306ZM131.088 144.9L136.706 139.281L108.225 110.8L102.606 116.419L131.088 144.9ZM24.7188 163.5C23.6854 163.5 22.6844 163.306 21.7156 162.919C20.7469 162.531 19.875 161.95 19.1 161.175L2.825 144.9C2.05 144.125 1.46875 143.253 1.08125 142.284C0.69375 141.316 0.5 140.315 0.5 139.281C0.5 138.248 0.69375 137.279 1.08125 136.375C1.46875 135.471 2.05 134.631 2.825 133.856L43.9 92.7812H60.3688L66.9563 86.1938L34.9875 54.225H23.9438L0.5 30.7812L22.3938 8.8875L45.8375 32.3313V43.375L77.8063 75.3438L100.281 52.8687L91.95 44.5375L102.8 33.6875H80.9063L75.4813 28.2625L102.994 0.75L108.419 6.175V28.0688L119.269 17.2188L146.781 44.7313C148.977 46.9271 150.656 49.4135 151.819 52.1906C152.981 54.9677 153.563 57.9063 153.563 61.0063C153.563 64.1063 152.981 67.0771 151.819 69.9188C150.656 72.7604 148.977 75.2792 146.781 77.475L130.313 61.0063L119.463 71.8563L111.325 63.7188L71.2188 103.825V120.1L30.1438 161.175C29.3688 161.95 28.5292 162.531 27.625 162.919C26.7208 163.306 25.7521 163.5 24.7188 163.5ZM24.7188 144.9L57.6563 111.963V106.344H52.0375L19.1 139.281L24.7188 144.9ZM24.7188 144.9L19.1 139.281L22.0063 141.994L24.7188 144.9Z" fill="#FFF9F1"/>
-                    </svg>
-                </div>
-            </div>
-            <p>Physical Interactions</p>
-        </a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1728" height="120" viewBox="0 0 1728 119" fill="none" style="width: 100%; height: auto;">
-            <path d="M-61 15.6L-1.36667 18.4819C58.2667 21.5813 177.533 27.0187 296.8 38.8181C416.067 50.4 535.333 67.8 654.6 67.8C773.867 67.8 893.133 50.4 1012.4 33C1131.67 15.6 1250.93 -1.8 1370.2 1.08188C1489.47 4.18125 1608.73 27.0187 1668.37 38.8181L1728 50.4V120H1668.37C1608.73 120 1489.47 120 1370.2 120C1250.93 120 1131.67 120 1012.4 120C893.133 120 773.867 120 654.6 120C535.333 120 416.067 120 296.8 120C177.533 120 58.2667 120 -1.36667 120H-61V15.6Z" fill="#FFD2D9"/>
-            </svg>
-        <div class="contact">
-            <h3 class="contact-me">Contact Me!</h3>
-            <address class="contact-info">
-                <div>
-                    Email: <a class= "hover-underline-animation left" href="mailto:kmlandrove04@gmail.com">kmlandrove04@gmail.com</a>
-                </div>
-                <div>
-                    Mobile Phone: <a class= "hover-underline-animation left" href="tel:786-314-0435">(786) 314-0435</a>
-                </div>
-                <div>
-                    LinkedIn: <a class= "hover-underline-animation left" href="https://www.linkedin.com/in/kaitlyn-landrove/">Kaitlyn Landrove</a>
-                </div>
-        </address>
-    </div>
-    <script src="js/rotate_words.js"></script>
+        <!--Floating Cirlces-->
+        <div class="cs-floater" aria-hidden="true"></div>
+    </footer>
+                                                            
+                          
+    <script src="index.js"></script>
+    <script src="scroll.js"></script>
+    
 </body>
 </html>
