@@ -19,6 +19,7 @@
         align-items: center;
         flex-direction: column;
         gap: clamp(3rem, 4vw, 4rem);
+        padding-top: 30rem;
     }
     #home .cs-content {
         font-family: var(--bodyFont);
