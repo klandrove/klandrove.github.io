@@ -1,17 +1,33 @@
-// add classes for mobile navigation toggling
+                      
+
 var CSbody = document.querySelector('body');
 const CSnavbarMenu = document.querySelector('#cs-navigation');
 const CShamburgerMenu = document.querySelector('#cs-navigation .cs-toggle');
+const navLinks = document.querySelectorAll('#cs-navigation a'); // Select all nav links
 
 CShamburgerMenu.addEventListener('click', function () {
 	CShamburgerMenu.classList.toggle('cs-active');
 	CSnavbarMenu.classList.toggle('cs-active');
 	CSbody.classList.toggle('cs-open');
-	// run the function to check the aria-expanded value
 	ariaExpanded();
 });
 
-// checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+// Function to close the menu
+function closeMenu() {
+	CShamburgerMenu.classList.remove('cs-active');
+	CSnavbarMenu.classList.remove('cs-active');
+	CSbody.classList.remove('cs-open');
+	ariaExpanded();
+}
+
+// Close menu when a nav link is clicked
+navLinks.forEach(link => {
+	link.addEventListener('click', function () {
+		closeMenu();
+	});
+});
+
+// Accessibility update function
 function ariaExpanded() {
 	const csUL = document.querySelector('#cs-expanded');
 	const csExpanded = csUL.getAttribute('aria-expanded');
@@ -23,7 +39,7 @@ function ariaExpanded() {
 	}
 }
 
-// mobile nav toggle code
+// Mobile nav dropdown toggle
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
 for (const item of dropDowns) {
 	const onClick = () => {
@@ -31,4 +47,3 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-                                

@@ -83,7 +83,7 @@ body {
     background-color: var(--blue);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    z-index: 10000;
+    z-index: 10000;   
   }
   #cs-navigation:before {
     content: "";
@@ -319,6 +319,9 @@ body {
   <--- -------------------------- -*/
   /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  body.cs-open {
+    overflow: hidden;
+  }
   #cs-navigation {
     width: 100%;
     /* prevents padding and border from affecting height and width */

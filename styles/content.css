@@ -196,7 +196,6 @@ h3{
     left: 0;
     object-fit: cover;
   }
-  
   #picture-left .cs-ul,
   #picture-right .cs-ul {
     width: 100%;
@@ -235,6 +234,18 @@ h3{
       display: block;
       top: 0.625rem;
       left: -0.9375rem;
+  }
+  #picture-right .cs-container-button,
+  #picture-left .cs-container-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #picture-right .cs-container-button .projects-button,
+  #picture-left .cs-container-button .projects-button {
+    align-items: center;
   }
   #picture-right .cs-container-video,
   #picture-left .cs-container-video {
@@ -304,6 +315,11 @@ h3{
   #picture-left .cs-content-video  {
     width: 50%;
     max-width: 600px;
+  }
+  #picture-right .cs-container-button,
+  #picture-left .cs-container-button {
+    flex-direction: row;
+    justify-content: center;
   }
 }
   
