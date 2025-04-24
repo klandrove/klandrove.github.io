@@ -1,89 +1,179 @@
-/* -- -------------------------- -->
-<---            CTA             -->
+/*-- -------------------------- -->
+<---          Contact           -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #contactme {
-    padding: var(--sectionPadding);
-    background-color: var(--blue);
-    position: relative;
-    z-index: 1;
+      padding: var(--sectionPadding);
+      position: relative;
+      z-index: 1;
   }
   #contactme .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+      width: 70%;
+      /* changes to 1280px at desktop */
+      max-width: 36.5rem;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+      /* 48px - 80px */
+      gap: clamp(3rem, 6vw, 5rem);
+      position: relative;
   }
   #contactme .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
   }
+
   #contactme .cs-title {
-    color: var(--white);
+      max-width: 23ch;
+      margin: 0 0 1.75rem 0;
+  }
+  #contactme .cs-form {
+      width: 100%;
+      /* 32px - 48px top and bottom */
+      /* 16px - 60px left and right */
+      padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
+      /* prevents flexbox from affecting height and width */
+      box-sizing: border-box;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      /* prevents flexbox from squishing it */
+      flex: none;
+      gap: 1rem;
+  }
+  #contactme .cs-form .cs-title {
+      /* 16px - 28px */
+      margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+  }
+  #contactme .cs-label {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      font-family: var(--bodyFont);
+      width: 100%;
+      color: var(--black);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.45rem;
+  }
+  #contactme .cs-input {
+      font-size: 1rem;
+      width: 100%;
+      height: 3.5rem;
+      padding: 0;
+      padding-left: 1.5rem;
+      color: var(--black);
+      background-color: #fff;
+      border: none;
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+  }
+  #contactme .cs-input::placeholder {
+      color: #767676;
+      opacity: 0.6;
+  }
+  #contactme .cs-textarea {
+      min-height: 7.5rem;
+      padding-top: 1.5rem;
+      /* 16px - 28px */
+      margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+      font-family: inherit;
   }
   #contactme .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: var(--blue);
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--white);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: var(--white);
+      border: none;
+      min-width: 9.375rem;
+      padding: 0 1.5rem;
+      background-color: var(--blue);
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      transition: color 0.3s;
   }
   #contactme .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: var(--skyblue);
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: var(--skyblue);
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+  }
+  #contactme .cs-button-solid:hover {
+      color: var(--white);
   }
   #contactme .cs-button-solid:hover:before {
-    width: 100%;
+      width: 100%;
   }
-  #contactme .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /* makes it act like a background image */
-    object-fit: cover;
+  #contactme .cs-submit {
+      width: 100%;
+      min-width: 17.6875rem;
+  }
+  #contactme .cs-submit:hover {
+      cursor: pointer;
+      color: var(--blue);
+  }
+  #contactme .cs-faq-group {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  #contactme .cs-item-p {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      width: 90%;
+      height: 0;
+      margin: 0;
+      /* 16px - 24px */
+      padding: 0 clamp(1rem, 2vw, 1.5rem);
+      opacity: 0;
+      color: var(--bodyTextColor);
+      /* clips the text so it doesn't show up */
+      overflow: hidden;
+      transition:
+          opacity 0.3s,
+          padding-bottom 0.3s;
   }
 }
-/* Small Desktop - 1024px */
+/* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #contactme .cs-content {
-    text-align: left;
-    flex-direction: row;
-    justify-content: space-around;
+  #contactme .cs-container {
+      max-width: 80rem;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  #contactme .cs-submit {
+      width: auto;
   }
 }
-                                
+
+                              

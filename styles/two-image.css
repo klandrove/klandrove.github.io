@@ -1,0 +1,68 @@
+/*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #picture-left .cs-image-group,
+    #picture-right .cs-image-group  {
+      /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+      font-size: min(1.98vw, .826rem);
+      /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+      width: 46.125em;
+      height: 36.125em;
+      order: -1;
+      position: relative;
+      z-index: 1;
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+    #picture-left .cs-two-picture,
+    #picture-right .cs-two-picture  {
+      width: 90%;
+      height: 90%;
+      display: block;
+    }
+    #picture-left .cs-two-picture img,
+    #picture-right .cs-two-picture img  {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+    #picture-left .cs-picture-wrapper1,
+    #picture-right .cs-picture-wrapper1  {
+        padding-bottom: 1rem;
+    }
+    #picture-left .cs-picture-wrapper2,
+    #picture-right .cs-picture-wrapper2  {
+      padding-top: 1rem;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #picture-left .cs-image-group,
+    #picture-right .cs-image-group  {
+      order: initial;
+    }
+  }
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #picture-left .cs-image-group,
+    #picture-right .cs-image-group  {
+      font-size: min(1.03vw, 1rem);
+      height: auto;
+    }
+    #picture-left .cs-picture-wrapper1,
+    #picture-right .cs-picture-wrapper1  {
+      height: auto;
+      bottom: 7.5625em;
+    }
+    #picture-left .cs-picture-wrapper2,
+    #picture-right .cs-picture-wrapper2  {
+      height: auto;
+      top: 6.5em;
+    }
+  }
+                                  

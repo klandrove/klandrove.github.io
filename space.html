@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/projects.css">
     <link rel="stylesheet" href="../styles/next-prev-buttons.css">
+    <link rel="stylesheet" href="../styles/two-image.css">
 </head>
 <body>
         
@@ -83,7 +84,11 @@
 
     <section id="picture-left" style="padding-top: 0;">
         <div class="cs-container">
+            <div class="embed-container" style="position:relative; width:800px; height:450px;">
+                <!-- Loading Indicator -->
+                <div class="loading-indicator">Loading Figma...</div>
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="350" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrBuBpXfracymi5i2kS35L%2FOnline-Apparel-Version-2%3Fnode-id%3D58-647%26node-type%3Dcanvas%26t%3D5pkhQQ7nM1FoK3l0-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D58%253A646%26starting-point-node-id%3D58%253A647" allowfullscreen></iframe>
+            </div> 
             
             <div class="cs-content">
                 <h3>Idea Conception</h3>
@@ -106,23 +111,36 @@
                 <p class="cs-text">
                     The goals of a target user were created. Based on these goals, a user flow was designed, laying out the steps a user would take to find clothes that fit. The user flow was created to ensure that the app would be intuitive and easy to use.
                 </p> 
-                <!-- <p class="cs-text">User Goals</p>
-                <ul class=cs-ul>
-                    <li class="cs-li">Get size recommendations for each article of clothes</li>
-                    <li class="cs-li">Get recommendations for “flattering” styles</li>
-                    <li class="cs-li">Filter clothes by silhouettes/styles</li>
-                    <li class="cs-li">Visualize how item fits on body</li>
-                </ul> -->
-                <a href="https://www.figma.com/board/Nfue86UVDGfCBnAq9OnOcx/Online-Apparel?node-id=0-1&t=Si0WvqmPY7ZYvnjb-1" class="cs-button-solid" target="_blank" rel="noopener">See the FigJam Board</a>    
+<!--                 
+                <a href="https://www.figma.com/board/Nfue86UVDGfCBnAq9OnOcx/Online-Apparel?node-id=0-1&t=Si0WvqmPY7ZYvnjb-1" class="cs-button-solid" target="_blank" rel="noopener">See the FigJam Board</a>     -->
             </div>
         </div>
     </section>
                                 
     <section id="picture-left">
         <div class="cs-container">
-            <picture class="cs-picture">
-                <iframe src="https://drive.google.com/file/d/1kzaBDXU88eGBMXdGMlw62CArxxL7yiSV/preview" width="640" height="480" allow="autoplay"></iframe>
-            </picture>
+            <div class="cs-image-group">
+                <!--Main Image-->
+                <div class="cs-picture-wrapper1">
+                    <picture class="cs-two-picture cs-two-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/1_Sketches_1.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/1_Sketches_1.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/space_clothing/1_Sketches_1.png" alt="construction" width="272" height="337">
+                    </picture>
+                </div>
+                <!--Small Image-->
+                <div class="cs-picture-wrapper2">
+                    <picture class="cs-two-picture cs-two-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/1_Sketches_2.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/1_Sketches_2.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/space_clothing/1_Sketches_2.png" alt="construction" width="243" height="367">
+                    </picture>
+                </div>
+            </div>
             <div class="cs-content">
                 <h3>Sketches</h3>
                 <p class="cs-text">
@@ -135,9 +153,28 @@
 
     <section id="picture-right">
         <div class="cs-container">
-            <picture class="cs-picture">
-                <iframe src="https://drive.google.com/file/d/1joicrqrHC8J1wpd9Iho0ReZMG8JYjECc/preview" width="640" height="480" allow="autoplay"></iframe>
-            </picture>
+            <div class="cs-image-group">
+                <!--Main Image-->
+                <div class="cs-picture-wrapper1">
+                    <picture class="cs-two-picture cs-two-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/1_Wireframe_1.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/1_Wireframe_1.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/space_clothing/1_Wireframe_1.png" alt="construction" width="272" height="337">
+                    </picture>
+                </div>
+                <!--Small Image-->
+                <div class="cs-picture-wrapper2">
+                    <picture class="cs-two-picture cs-two-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/1_Wireframe_2.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/1_Wireframe_2.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/space_clothing/1_Wireframe_2.png" alt="construction" width="243" height="367">
+                    </picture>
+                </div>
+            </div>
             <div class="cs-content">
                 <h3>Hand-Drawn Wireframes</h3>
                 <p class="cs-text">
@@ -165,7 +202,7 @@
                 <p class="cs-text">
                     Grey placeholder text and images were used in the digital wireframes to represent the placement of final content that would be displayed in the app.
                 </p>  
-                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?m=auto&t=euxeQikp5Z4SzCPy-6" class="cs-button-solid" target="_blank" rel="noopener">See the Wireframe</a>     
+                <!-- <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?m=auto&t=euxeQikp5Z4SzCPy-6" class="cs-button-solid" target="_blank" rel="noopener">See the Wireframe</a>      -->
             </div>
         </div>
     </section>
@@ -237,7 +274,7 @@
                 <p class="cs-text">
                     Placeholder elements were replaced with fully styled elements, including images, colors, fonts, and icons. Images were downloaded from the Old Navy Website.
                 </p>
-                <a href="https://www.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=36-1702&t=BZOcFora58MSLCOo-1" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>     
+                <!-- <a href="https://www.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=36-1702&t=BZOcFora58MSLCOo-1" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>      -->
             </div>
         </div>
     </section>
@@ -261,7 +298,7 @@
                 <p class="cs-text">
                     Some functions, such as the search bar and cart, are not functional. The prototype was created to demonstrate the overall functionality of the app.
                 </p>
-                <a href="https://www.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=58-646&t=BZOcFora58MSLCOo-1" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>     
+                <!-- <a href="https://www.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=58-646&t=BZOcFora58MSLCOo-1" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>      -->
             </div>
         </div>
     </section>
@@ -269,54 +306,48 @@
 
     <section id="picture-left">
         <div class="cs-container">
-            <div class="cs-long">
+            <div>
                 <h3>User Testing</h3>
                 <p class="cs-text">
                     2 females, aged 19 and 20 were recruited to test the prototype. The users were asked to complete a series of tasks, including using the "Best Fit Tool", adding an item to the cart, and checking out.
                 </p>
-                <div class="cs-container" style="justify-content: space-around;">
-                    <div>
-                        <p class="cs-text">
-                            Task 1: Use the "Best Fit Tool"
-                        </p>  
-                        <p class="cs-text">
-                            Average time: 25 seconds
-                        </p>
-                    </div>
-                    <div>
-                        <p class="cs-text">
-                            Task 2: Add an item to the cart and checkout
-                        </p>
-                        <p class="cs-text">
-                            Average time: 31.5 seconds
-                        </p>
-                    </div>
+            </div>
+                <div style="justify-content: space-around;">
+                    <h3>Takeaways</h3>
+                    <ul class=cs-ul>
+                        <li class="cs-li">The Best Fit banner did not stand out on the home page</li>
+                        <li class="cs-li">There should be a page between the Best Fit tool and recommended silhouettes</li>
+                        <li class="cs-li">"See fit" button did not stand out enough on the item page</li>
+                    </ul>  
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="picture-right">
-        <div class="cs-container">
-            <div class="cs-long">
-                <h3>User Testing Takeaways</h3>
-                <ul class=cs-ul>
-                    <li class="cs-li">The Best Fit banner did not stand out on the home page</li>
-                    <li class="cs-li">There should be a page between the Best Fit tool and recommended silhouettes</li>
-                    <li class="cs-li">"See fit" button did not stand out enough on the item page</li>
-                </ul>  
-            </div>
-        </div>
-    </section>
-            
-
     <section id="picture-left">
         <div class="cs-container">
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
-                <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
-                <embed src="../assets/images/space_clothing/Project+1.5+Wireframes.pdf" width="600" height="400" type="application/pdf">
-            </picture>
+            <div class="cs-image-group">
+                <!--Main Image-->
+                <div class="cs-picture-wrapper1">
+                    <picture class="cs-two-picture cs-two-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/1.5_Wireframe_1.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/1.5_Wireframe_1.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/space_clothing/1.5_Wireframe_1.png" alt="construction" width="272" height="337">
+                    </picture>
+                </div>
+                <!--Small Image-->
+                <div class="cs-picture-wrapper2">
+                    <picture class="cs-two-picture cs-two-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/1.5_Wireframe_2.png">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/1.5_Wireframe_2.png">
+                        <img loading="lazy" decoding="async" src="../assets/images/space_clothing/1.5_Wireframe_2.png" alt="construction" width="243" height="367">
+                    </picture>
+                </div>
+            </div>
             <div class="cs-content">
                 <h3>Second Iteration Sketches</h3>
                 <p class="cs-text">
@@ -336,7 +367,7 @@
                 <p class="cs-text">
                     The second iteration sketches were digitized to create low fidelity wireframes. The wireframes were created to visualize the layout of the app and to determine the placement of elements on the screen.
                 </p>
-                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=0-1&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Wireframe</a>  
+                <!-- <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=0-1&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Wireframe</a>   -->
             </div>
         </div>
     </section>
@@ -351,7 +382,7 @@
                 <p class="cs-text">
                     The second iteration wireframes were digitized to create a mockup. The mockup was created to visualize the colors, images, and fonts with the new layout.
                 </p>
-                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=36-1702&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>  
+                <!-- <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=36-1702&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>   -->
             </div>
         </div>
     </section>
@@ -366,7 +397,7 @@
                 <p class="cs-text">
                     The final prototype was created by adding all interactions to the mockup. The prototype was created to demonstrate the functionality of the app and to show how users would interact with the app.
                 </p>
-                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=58-646&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>  
+                <!-- <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=58-646&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>   -->
             </div>
         </div>
     </section>
@@ -452,6 +483,23 @@
     </script>
                             
 <script src="index.js"></script>
+<script>
+    // Function to hide the loading indicator after a delay
+    function hideLoadingIndicator() {
+        var loadingIndicator = document.querySelector('.loading-indicator');
+        if (loadingIndicator) {
+            loadingIndicator.style.display = 'none';
+        }
+    }
+
+    // Use setTimeout to simulate the loading delay (2 seconds as an example)
+    setTimeout(hideLoadingIndicator, 5000); // Adjust the timeout as needed
+
+    iframe.onload = function() {
+        console.log('Iframe has loaded');
+        hideLoadingIndicator();
+    };
+</script>
 
 </body>
 </html>

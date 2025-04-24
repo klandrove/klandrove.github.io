@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contactme.css">
     <link rel="stylesheet" href="styles/about.css">
-    <form action="https://formsubmit.co/kmlandrove04@gmail.com" method="POST" />
+    
 </head>
 <body>
         
@@ -216,40 +216,39 @@
         </div>
     </section>
 
+
 <!-- ============================================ -->
 <!--                   Contact                    -->
 <!-- ============================================ -->
 
-    <section id="contactme">
-        <div class="cs-container">
+<section id="contactme">
+    <div class="cs-container">
+        <!--Form-->
+        <form class="cs-form" id="cs-form" name="Contact Form" method="post">
             <div class="cs-content">
-                <h2 class="cs-title">Contact me!</h2>
-                <a href="mailto:kmlandrove04@gmail.com" class="cs-button-solid">Email</a>
+                <span class="cs-topper">Contact Me</span>
+                <h2 class="cs-title">I'd Love to Hear From You!</h2>
             </div>
-        </div>
-        <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
-        <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
-            <h3 class="cs-h3">Make Appointment</h3>
             <label class="cs-label">
-                Name
-                <input class="cs-input" required="" type="text" id="name-1388" name="name" placeholder="Name">
+                Name *
+                <input class="cs-input" required type="text" id="name" name="name" placeholder="Name">
             </label>
             <label class="cs-label cs-email">
-                Email
-                <input class="cs-input" required="" type="email" id="email-1388" name="email" placeholder="Email">
+                Email *
+                <input class="cs-input" required type="email" id="email" name="email" placeholder="Email">
             </label>
             <label class="cs-label cs-phone">
                 Phone
-                <input class="cs-input" required="" type="number" id="phone-1388" name="phone" placeholder="Phone">
+                <input class="cs-input" type="number" id="phone name="phone" placeholder="Phone">
             </label>
             <label class="cs-label">
-                Message
-                <textarea class="cs-input cs-textarea" required="" name="Message" id="message-1388" placeholder="Write message..."></textarea>
+                Message *
+                <textarea class="cs-input cs-textarea" required name="Message" id="message" placeholder="Write message..."></textarea>
             </label>
             <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
-        </form>         
-    </section>
-
+        </form>
+    </div>
+</section>
  
 <!-- ============================================ -->
 <!--                   About Me                   -->
