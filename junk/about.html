@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/about.css">
+</head>
+<body>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="../" class="cs-logo" aria-label="back to home">
+                <h2>Kaitlyn Landrove</h2>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="../" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../projects.html" class="cs-li-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="../#contactme" class="cs-li-link">
+                                Contact Me
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="about.html" class="cs-li-link  cs-active">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+    <section id="about">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="Headshot.jpg">
+                    <source media="(min-width: 601px)" srcset="Headshot.jpg">
+                    <img loading="lazy" decoding="async" src="Headshot.jpg" alt="cleaner" width="630" height="630" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <span class="cs-desc">That's<br>me!</span>
+                </div>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">About Me</span>
+                <h2 class="cs-title">Practical Creative Technologist</h2>
+                <p class="cs-text">
+                    I was born and raised in South Florida, proudly embracing my Cuban heritage, including the language and traditions passed down by my grandparents. I earned a Bachelor of Science in Computer Science and Interactive Media from the University of Miami.
+                </p>
+                <p class="cs-text"> 
+                    I am passionate about creating unique and accessible user experiences on the web, whether from scratch in an empty HTML file or using frameworks such as Bootstrap. I have knowledge of full-stack development, a variety of data analytic tools, quality assurance principles, and scrum methodologies.
+                </p>
+                <p class="cs-text">
+                    As the Vice President of Marketing for Kappa Theta Pi Sigma Chapter, a professional technology fraternity, I frequently collaborate with diverse individuals who share a passion for technology. Outside of class, you can find me at sporting events, especially baseball and hockey games. Sometimes, you may even find me on the field as a ball girl!
+                </p>
+                <p class="cs-text">
+                    I am always eager to learn and take on new challenges, striving to blend creativity with technical skills to build engaging digital experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+    <footer id="contact">
+        <div class="cs-container">      
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="../#home">
+                    <h2 class="cs-logo">Kaitlyn Landrove</h2>
+                </a>
+                <p class="cs-text">
+                    Contact me!
+                </p>
+                <a href="mailto:kmlandrove04@gmail.com" id="emailLink" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=86206&format=png&color=FFFFFF" alt="Copy email icon" title= "Copy Email" width="24" height="24">
+                    kmlandrove04@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/kaitlyn-landrove/" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=85044&format=png&color=FFFFFF" alt="LinkedIn icon" title= "LinkedIn" width="24" height="24">
+                    LinkedIn
+                </a>
+                <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=24252&format=png&color=FFFFFF" alt="resume icon" title= "Resume" width="24" height="24">
+                    Resume
+                </a>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="../#home">Home</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="../about.html">About</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="#projects">Projects</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../tropictone.html">TropicTone</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../space.html">Space Clothing</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../water_and_rings.html">Water and Rings</a>
+                </li>
+            </ul>            
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">
+                <a class="cs-copyright-link" href="https://icons8.com" target="_blank" rel="noopener">Icons by Icons8</a>
+            </span>
+            
+            <a href="https://codestitch.app/app" class="cs-copyright-link">Components from CodeStitch</a>
+        </div>
+        <!--Floating Cirlces-->
+        <div class="cs-floater" aria-hidden="true"></div>
+    </footer>
+    <script>
+        document.getElementById('emailLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the browser from navigating to the email address
+        const email = 'your.email@example.com';
+        navigator.clipboard.writeText(email).then(() => {
+            alert('Email address copied to clipboard!'); // Optional feedback
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+        });
+    </script>   
+                            
+<script src="index.js"></script>
+
+</body>
+</html>

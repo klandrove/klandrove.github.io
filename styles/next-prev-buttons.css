@@ -1,0 +1,57 @@
+#next-prev-buttons {
+    display: flex;
+    width: 100%;
+}
+#next-prev-buttons .cs-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+#next-prev-buttons .cs-button {
+    font-family: var(--bodyFont);
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--blue);
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--white);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+}
+#next-prev-buttons .cs-button:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--blue);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+}
+#next-prev-buttons .cs-button:hover {
+    color: #fff;
+}
+#next-prev-buttons .cs-button:hover:before {
+    width: 100%;
+}
+#next-prev-buttons .cs-button.prev:before {
+    left: auto;
+    right: 0; 
+}
+#next-prev-buttons .cs-button.prev:hover:before {
+    width: 100%;
+    right: 0;
+}

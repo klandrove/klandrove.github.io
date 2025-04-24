@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/next-prev-buttons.css">
 </head>
 <body>
         
@@ -50,7 +51,7 @@
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="about.html" class="cs-li-link">
+                            <a href="#about" class="cs-li-link">
                                 About
                             </a>
                         </li>
@@ -70,7 +71,7 @@
                 <span class="cs-topper">Figma Prototype</span>
                 <h3 class="cs-title">Space Clothing</h3>
                 <p class="cs-text" style="width: 70%; max-width: 80rem;">
-                    A Figma prototype for an online shopping experience that simplifies finding items in your size. The app would feature a virtual avatar, allowing users to try on clothing digitally before making a purchase.
+                    A Figma prototype for an online shopping experience that simplifies finding items in your size. The app features a virtual avatar, allowing users to try on clothing digitally before making a purchase.
                 </p>
             </div>
         </div> 
@@ -98,14 +99,21 @@
             <picture class="cs-picture">
                 <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_user_flow.png">
                 <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_user_flow.png">
-                <img loading="lazy" decoding="async" src="../assets/images/space_clothing/space_apparel_user_flow.png" alt="space user flow" width="650" height="600" aria-hidden="true">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/Nfue86UVDGfCBnAq9OnOcx/Online-Apparel?node-id=0-1&embed-host=share" allowfullscreen></iframe>
             </picture>
             <div class="cs-content">
                 <h3>User Goals and User Flow</h3>
                 <p class="cs-text">
                     The goals of a target user were created. Based on these goals, a user flow was designed, laying out the steps a user would take to find clothes that fit. The user flow was created to ensure that the app would be intuitive and easy to use.
                 </p> 
-                <a href="https://www.figma.com/board/2tVsUj3SiQpkMwn3zgydDQ/Online-Apparel-Updated?t=eo5GSAMWyq9afL52-1" class="cs-button-solid" target="_blank" rel="noopener">See the FigJam Board</a>    
+                <!-- <p class="cs-text">User Goals</p>
+                <ul class=cs-ul>
+                    <li class="cs-li">Get size recommendations for each article of clothes</li>
+                    <li class="cs-li">Get recommendations for “flattering” styles</li>
+                    <li class="cs-li">Filter clothes by silhouettes/styles</li>
+                    <li class="cs-li">Visualize how item fits on body</li>
+                </ul> -->
+                <a href="https://www.figma.com/board/Nfue86UVDGfCBnAq9OnOcx/Online-Apparel?node-id=0-1&t=Si0WvqmPY7ZYvnjb-1" class="cs-button-solid" target="_blank" rel="noopener">See the FigJam Board</a>    
             </div>
         </div>
     </section>
@@ -147,7 +155,7 @@
             <picture class="cs-picture">
                 <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_wireframe.png">
                 <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_wireframe.png">
-                <img loading="lazy" decoding="async" src="../assets/images/space_clothing/space_apparel_wireframe.png" alt="space wireframe" width="650" height="600" aria-hidden="true">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=0-1&embed-host=share" allowfullscreen></iframe>
             </picture>
             <div class="cs-content">
                 <h3>Digital Wireframes</h3>
@@ -166,16 +174,52 @@
     <section id="picture-right">
         <div class="cs-container">
             <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
-                <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
-                <img loading="lazy" decoding="async" src="../assets/images/space_clothing/space_apparel_mockup.png" alt="space mockup" width="650" height="600" aria-hidden="true">
+                <div class="cs-blob-row">
+                    <div class="cs-blobs">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#OB132B" d="M66.8,-24.9C74.5,2.2,60.5,33.1,40.5,45.1C20.5,57.1,-5.5,50.2,-24.6,35.9C-43.7,21.5,-55.9,-0.3,-50.7,-23.9C-45.4,-47.5,-22.7,-72.9,3.4,-74C29.5,-75.1,59,-51.9,66.8,-24.9Z" transform="translate(100 100)" />
+                        </svg>
+                        <p class="cs-text">#0B132B</p>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#1C2541" d="M66.8,-24.9C74.5,2.2,60.5,33.1,40.5,45.1C20.5,57.1,-5.5,50.2,-24.6,35.9C-43.7,21.5,-55.9,-0.3,-50.7,-23.9C-45.4,-47.5,-22.7,-72.9,3.4,-74C29.5,-75.1,59,-51.9,66.8,-24.9Z" transform="translate(100 100)" />
+                        </svg>
+                        <p class="cs-text">#1C2541</p>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#386150" d="M66.8,-24.9C74.5,2.2,60.5,33.1,40.5,45.1C20.5,57.1,-5.5,50.2,-24.6,35.9C-43.7,21.5,-55.9,-0.3,-50.7,-23.9C-45.4,-47.5,-22.7,-72.9,3.4,-74C29.5,-75.1,59,-51.9,66.8,-24.9Z" transform="translate(100 100)" />
+                        </svg>
+                        <p class="cs-text">#386150</p>
+                    </div>
+                </div>
+                <div class="cs-blob-row">
+                    <div>
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#F2F4F3" stroke="#d9d9d9" stroke-width="2" d="M66.8,-24.9C74.5,2.2,60.5,33.1,40.5,45.1C20.5,57.1,-5.5,50.2,-24.6,35.9C-43.7,21.5,-55.9,-0.3,-50.7,-23.9C-45.4,-47.5,-22.7,-72.9,3.4,-74C29.5,-75.1,59,-51.9,66.8,-24.9Z" transform="translate(100 100)" />
+                        </svg>
+                        <p class="cs-text">#F2F4F3</p>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#AEC5EB" d="M66.8,-24.9C74.5,2.2,60.5,33.1,40.5,45.1C20.5,57.1,-5.5,50.2,-24.6,35.9C-43.7,21.5,-55.9,-0.3,-50.7,-23.9C-45.4,-47.5,-22.7,-72.9,3.4,-74C29.5,-75.1,59,-51.9,66.8,-24.9Z" transform="translate(100 100)" />
+                        </svg>
+                        <p class="cs-text">#AEC5EB</p>
+                    </div>
+                </div>
             </picture>
             <div class="cs-content">
-                <h3>Digital Mockup</h3>
+                <h3>Fonts and Colors</h3>
                 <p class="cs-text">
-                    Placeholder elements were replaced with fully styled elements, including images, colors, fonts, and icons. Images were downloaded from the Old Navy Website.
+                    Fonts and colors were inspired by the Old Navy website. The fonts were chosen to be modern and easy to read. The colors were chosen to be mature and sophisticated, while still being fun and playful.
+                </p> 
+                <p class="cs-text" style="font-family: var(--headingFont); font-size: 1.2rem;">
+                    Headers- DM Serif Display
                 </p>
-                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=36-1702&node-type=canvas" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>     
+                <p class="cs-text">
+                    Body - Mulish
+                </p>
             </div>
         </div>
     </section>
@@ -184,9 +228,27 @@
     <section id="picture-left">
         <div class="cs-container">
             <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
+                <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=36-1702&embed-host=share" allowfullscreen></iframe>
+            </picture>
+            <div class="cs-content">
+                <h3>Digital Mockup</h3>
+                <p class="cs-text">
+                    Placeholder elements were replaced with fully styled elements, including images, colors, fonts, and icons. Images were downloaded from the Old Navy Website.
+                </p>
+                <a href="https://www.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=36-1702&t=BZOcFora58MSLCOo-1" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>     
+            </div>
+        </div>
+    </section>
+
+
+    <section id="picture-right">
+        <div class="cs-container">
+            <picture class="cs-picture">
                 <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_prototype.png">
                 <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_prototype.png">
-                <img loading="lazy" decoding="async" src="../assets/images/space_clothing/space_apparel_prototype.png" alt="space prototype" width="650" height="600" aria-hidden="true">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=58-647&p=f&scaling=scale-down&content-scaling=fixed&page-id=58%3A646&starting-point-node-id=58%3A647&embed-host=share" allowfullscreen></iframe>
             </picture>
             <div class="cs-content">
                 <h3>Digital Prototype</h3>
@@ -199,58 +261,195 @@
                 <p class="cs-text">
                     Some functions, such as the search bar and cart, are not functional. The prototype was created to demonstrate the overall functionality of the app.
                 </p>
-                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=58-646&node-type=canvas" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>     
+                <a href="https://www.figma.com/design/JskWFibNb0tumTJGyp5pej/Online-Apparel?node-id=58-646&t=BZOcFora58MSLCOo-1" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>     
             </div>
         </div>
     </section>
-<!-- ============================================ -->
-<!--                  Footer                      -->
-<!-- ============================================ -->
 
-<footer id="footer-1147">
-    <div class="cs-container">
-        <div class="cs-top">
-            <a aria-label="go back to home" class="cs-logo" href="">
-                <h3>Kaitlyn Landrove</h3>
-            </a>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <a href="../#home" class="cs-link">Home</a>
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>User Testing</h3>
+                <p class="cs-text">
+                    2 females, aged 19 and 20 were recruited to test the prototype. The users were asked to complete a series of tasks, including using the "Best Fit Tool", adding an item to the cart, and checking out.
+                </p>
+                <div class="cs-container" style="justify-content: space-around;">
+                    <div>
+                        <p class="cs-text">
+                            Task 1: Use the "Best Fit Tool"
+                        </p>  
+                        <p class="cs-text">
+                            Average time: 25 seconds
+                        </p>
+                    </div>
+                    <div>
+                        <p class="cs-text">
+                            Task 2: Add an item to the cart and checkout
+                        </p>
+                        <p class="cs-text">
+                            Average time: 31.5 seconds
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-right">
+        <div class="cs-container">
+            <div class="cs-long">
+                <h3>User Testing Takeaways</h3>
+                <ul class=cs-ul>
+                    <li class="cs-li">The Best Fit banner did not stand out on the home page</li>
+                    <li class="cs-li">There should be a page between the Best Fit tool and recommended silhouettes</li>
+                    <li class="cs-li">"See fit" button did not stand out enough on the item page</li>
+                </ul>  
+            </div>
+        </div>
+    </section>
+            
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
+                <source media="(min-width: 601px)" srcset="../assets/images/space_clothing/space_apparel_mockup.png">
+                <embed src="../assets/images/space_clothing/Project+1.5+Wireframes.pdf" width="600" height="400" type="application/pdf">
+            </picture>
+            <div class="cs-content">
+                <h3>Second Iteration Sketches</h3>
+                <p class="cs-text">
+                    Sketches were made for a new Virtual Stylist feature, as well as to redesign the item and home page. A new page with recommended sizes was also sketched.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-right">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+            </picture>
+            <div class="cs-content">
+                <h3>Low Fidelity Wireframes</h3>
+                <p class="cs-text">
+                    The second iteration sketches were digitized to create low fidelity wireframes. The wireframes were created to visualize the layout of the app and to determine the placement of elements on the screen.
+                </p>
+                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=0-1&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Wireframe</a>  
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-left">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=36-1702&embed-host=share" allowfullscreen></iframe>
+            </picture>
+            <div class="cs-content">
+                <h3>Mockup</h3>
+                <p class="cs-text">
+                    The second iteration wireframes were digitized to create a mockup. The mockup was created to visualize the colors, images, and fonts with the new layout.
+                </p>
+                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=36-1702&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Mockup</a>  
+            </div>
+        </div>
+    </section>
+
+    <section id="picture-right">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=58-647&p=f&scaling=scale-down&content-scaling=fixed&page-id=58%3A646&starting-point-node-id=58%3A647&embed-host=share" allowfullscreen></iframe>
+            </picture>
+            <div class="cs-content">
+                <h3>Final Prototype</h3>
+                <p class="cs-text">
+                    The final prototype was created by adding all interactions to the mockup. The prototype was created to demonstrate the functionality of the app and to show how users would interact with the app.
+                </p>
+                <a href="https://www.figma.com/design/BrBuBpXfracymi5i2kS35L/Online-Apparel-Version-2?node-id=58-646&t=OBsd2KJSzqnCb10h-1" class="cs-button-solid" target="_blank" rel="noopener">See the Prototype</a>  
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                 Next/Back                    -->
+<!-- ============================================ -->    
+
+    <section id="next-prev-buttons">
+        <div class="cs-container split">
+            <a href="../water_and_rings.html" class="prev cs-button">&laquo; Previous Project</a>
+            <a href="../tropictone.html" class="next cs-button">Next Project &raquo;</a>
+        </div>
+    </section>
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+    <footer id="footer">
+        <div class="cs-container">      
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="../#home">
+                    <h2 class="cs-logo">Kaitlyn Landrove</h2>
+                </a>
+                <a href="mailto:kmlandrove04@gmail.com" id="emailLink" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=86206&format=png&color=FFFFFF" alt="Copy email icon" title= "Copy Email" width="24" height="24">
+                    kmlandrove04@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/kaitlyn-landrove/" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=85044&format=png&color=FFFFFF" alt="LinkedIn icon" title= "LinkedIn" width="24" height="24">
+                    LinkedIn
+                </a>
+                <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-link" target="_blank" rel="noopener">
+                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=24252&format=png&color=FFFFFF" alt="resume icon" title= "Resume" width="24" height="24">
+                    Resume
+                </a>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="../#home">Home</a>
                 </li>
-                <li class="cs-li">
-                    <a href="../#projects" class="cs-link">Projects</a>
-                </li>
-                <li class="cs-li">
-                    <a href="../about.html" class="cs-link">About</a>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../about">About</a>
                 </li>
             </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a class="cs-header-link" href="../#projects">Projects</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../tropictone.html">TropicTone</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../space.html">Space Clothing</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="../water_and_rings.html">Water and Rings</a>
+                </li>
+            </ul>            
         </div>
         <div class="cs-bottom">
-            <!--Social-->
-            <ul class="cs-social">
-                <li class="cs-social-li">
-                    <a href="https://www.linkedin.com/in/kaitlyn-landrove" class="cs-social-link" aria-label="linkedin" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF" alt="linkedin icon" loading="lazy" decoding="async" 
-                        title = "LinkedIn" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="mailto:kmlandrove04@gmail.com" class="cs-social-link" aria-label="email" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=jicLxt1sA2qa&format=png&color=FFFFFF" alt="email icon" loading="lazy" decoding="async" 
-                        title = "Email" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-social-link" aria-label="resume" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://img.icons8.com/?size=100&id=23882&format=png&color=FFFFFF" alt="resume icon" loading="lazy" decoding="async" 
-                        title= "Resume" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-            </ul>
-            <p class="cs-icon-legal">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            <span class="cs-copyright">
+                <a class="cs-copyright-link" href="https://icons8.com" target="_blank" rel="noopener">Icons by Icons8</a>
+            </span>
+            
+            <a href="https://codestitch.app/app" class="cs-copyright-link">Components from CodeStitch</a>
         </div>
-    </div>
-</footer>
+        <!--Floating Cirlces-->
+        <div class="cs-floater" aria-hidden="true"></div>
+    </footer>
+    <script>
+        document.getElementById('emailLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the browser from navigating to the email address
+        const email = 'your.email@example.com';
+        navigator.clipboard.writeText(email).then(() => {
+            alert('Email address copied to clipboard!'); // Optional feedback
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+        });
+    </script>
                             
 <script src="index.js"></script>
 

@@ -455,152 +455,321 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #footer-1147 {
-    padding: var(--sectionPadding);
-    position: relative;
-    z-index: 1;
-    background-color: var(--blue);
+  #footer {
+      padding: var(--sectionPadding);
+      padding-bottom: 1.25rem;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      z-index: 10;
+      background-color: var(--blue);
+      /* Navigation Links */
   }
-  #footer-1147 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #footer .cs-container {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      column-gap: 1.5rem;
+      row-gap: 2.25rem;
   }
-  #footer-1147 .cs-top {
-    width: 100%;
-    /* 32px - 40px */
-    margin-bottom: clamp(2rem, 4vw, 2.5rem);
-    padding-bottom: clamp(2rem, 4vw, 2.5rem);
-    border-bottom: 1px solid var(--lightgray);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+  #footer .cs-logo-group {
+      /* takes up all the space, lets the other ul's wrap below it */
+      width: 100%;
+      position: relative;
   }
-  #footer-1147 .cs-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    row-gap: 0.5rem;
-    /* 28px - 40px */
-    column-gap: clamp(1.75rem, 4vw, 2.5rem);
+  #footer .cs-logo {
+      width: 100%;
+      max-width: 12rem;
+      height: 100%;
+      margin: 0 auto 0 0;
+      padding-bottom: 0.75rem;
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      text-decoration: none;
   }
-  #footer-1147 .cs-li {
-    list-style: none;
-    position: relative;
-  }
-  #footer-1147 .cs-link {
-    font-family: var(--bodyFont);
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    text-decoration: none;
-    margin: 0;
-    color: var(--white);
-    display: block;
-    transition: color 0.3s;
-  }
-  #footer-1147 .cs-link:before {
-    /* underline */
-    content: "";
-    width: 0%;
-    height: 0.125rem;
-    background: currentColor;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.125rem;
-    left: 0;
-    transition: width 0.3s;
-  }
-  #footer-1147 .cs-link:hover {
+  #footer .cs-logo h2 {
+      font-family: var(--headingFont);
+      font-size: 1.5rem;
       color: var(--white);
   }
-  #footer-1147 .cs-link:hover:before {
+  #footer .cs-text {
+      font-family: var(--bodyFont);
+      font-size: 1.2rem;
+      line-height: 1.5em;
+      /* 20px - 36px */
+      margin: 0 0 clamp(0.75rem, 2vw, 1rem);
+      width: 78%;
+      max-width: 15rem;
+      color: var(--white);
+  }
+  #footer .cs-link {
+      font-family: var(--bodyFont);
+      font-size: 1rem;
+      line-height: 2em;
+      text-decoration: none;
+      margin: 0;
+      color: var(--white);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.75rem;
+      transition: color 0.3s;
+  }
+  #footer .cs-link:hover {
+      color: var(--skyblue);
+  }
+  #footer .cs-nav {
+      width: 45%;
+      max-width: 11.25rem;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  #footer .cs-nav-li {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+  #footer .cs-header-link {
+      font-family: var(--bodyFont);
+      font-size: 1.2rem;
+      line-height: 1.2em;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+      position: relative;
+      display: block;
+      text-decoration: none;
+  }
+  #footer .cs-header-link:before {
+      /* underline */
+      content: "";
+      width: 0%;
+      height: 0.125rem;
+      background: currentColor;
+      opacity: 1;
+      position: absolute;
+      display: block;
+      bottom: -0.125rem;
+      left: 0;
+      transition: width 0.3s;
+  }
+  #footer .cs-header-link:hover {
+      color: var(--white);
+  }
+  #footer .cs-header-link:hover:before {
       width: 100%;
   }
-  #footer-1147 .cs-logo {
-    width: 15rem;
-    height: auto;
-    display: block;
+  #footer .cs-nav-link {
+      font-family: var(--bodyFont);
+      font-size: 1rem;
+      text-decoration: none;
+      line-height: 1.5em;
+      width: auto;
+      color: var(--white);
+      position: relative;
+      display: inline-block;
+      transition: color 0.3s;
   }
-  #footer-1147 .cs-logo h3 {
-    text-align: center;
-    font-family: var(--headingFont);
-    font-size: 1.25rem;
-    color: var(--white);
-    text-decoration: none;
-  }  
-  #footer-1147 .cs-logo{
-    text-decoration: none;
+  #footer .cs-nav-link:before {
+      /* underline */
+      content: "";
+      width: 0%;
+      height: 0.125rem;
+      background: currentColor;
+      opacity: 1;
+      position: absolute;
+      display: block;
+      bottom: -0.125rem;
+      left: 0;
+      transition: width 0.3s;
   }
-  #footer-1147 .cs-bottom {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+  #footer .cs-nav-link:hover {
+      color: var(--white);
   }
-  #footer-1147 .cs-social {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  #footer .cs-nav-link:hover:before {
+      width: 100%;
   }
-  #footer-1147 .cs-social-li {
-    list-style: none;
+  #footer .cs-bottom {
+      max-width: 80rem;
+      margin: auto;
+      /* 48px - 100px */
+      margin-top: clamp(0.8rem, 3vw, 2rem);
+      /* 20px - 32px */
+      padding: clamp(1.25rem, 3vw, 2rem) 0 0 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 2.25rem;
+      row-gap: 0.75rem;
   }
-  #footer-1147 .cs-social-link {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: var(--blue);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
+  #footer .cs-copyright,
+  #footer .cs-copyright-link {
+      font-family: var(--bodyFont);
+      font-size: 0.875rem;
+      line-height: 1.5em;
+      color: var(--white);
   }
-  #footer-1147 .cs-social-link:hover {
-    background-color: var(--skyblue);
+  #footer .cs-copyright {
+      text-align: center;
+      width: 100%;
   }
-  #footer-1147 .cs-social-link:hover .cs-social-icon {
-    filter: grayscale(1) brightness(0);
-    opacity: 1;
+  #footer .cs-copyright-link {
+      text-decoration: none;
+      transition: color 0.3s;
   }
-  #footer-1147 .cs-social-icon {
-    color: var(--white);
-    width: 1.5rem;
-    height: auto;
-    display: block;
-    opacity: 1;
+  #footer .cs-copyright-link:hover {
+      color: var(--white);
   }
-  #footer-1147 .cs-icon-legal {
-    font-family: var(--bodyFont);
-    font-size: 0.8rem;
-    color: var(--white);
+  #footer .cs-floater {
+      width: 31.625rem;
+      height: 31.625rem;
+      margin-left: 34.375rem;
+      border-radius: 50%;
+      border: 2px solid var(--white);
+      opacity: 0.1;
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
   }
-  #footer-1147 .cs-icon-legal a {
-    color: var(--white);
+  #footer .cs-floater:before {
+      content: "";
+      width: 44.6875rem;
+      height: 44.6875rem;
+      border: 2px solid var(--white);
+      border-radius: 50%;
+      opacity: 0.6;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  #footer .cs-floater:after {
+      content: "";
+      width: 60.1875rem;
+      height: 60.1875rem;
+      border: 2px solid var(--white);
+      border-radius: 50%;
+      opacity: 0.3;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #footer-1147 .cs-top {
-    flex-direction: row;
-    justify-content: space-between;
+  #footer .cs-container {
+      row-gap: 0;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      column-gap: 5.5rem;
+      row-gap: 2.5rem;
   }
-  #footer-1147 .cs-bottom {
-    flex-direction: row;
-    justify-content: space-between;
+  #footer .cs-nav {
+      width: auto;
+  }
+  #footer .cs-bottom {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+  #footer .cs-copyright {
+      text-align: left;
+      width: auto;
+      margin-right: auto;
+  }
+  #footer .cs-floater {
+      display: block;
   }
 }
-                            
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #footer .cs-container {
+      max-width: 80rem;
+      flex-wrap: nowrap;
+      /* align everything to the right */
+      justify-content: flex-end;
+      column-gap: clamp(2.5rem, 6vw, 5.25rem);
+  }
+  #footer .cs-logo-group {
+      width: 30%;
+      max-width: 24.1875rem;
+      /* pushes away from everything to the right */
+      margin-right: auto;
+  }
+  #footer .cs-text {
+      width: 100%;
+  }
+  #footer .cs-graphic {
+      display: block;
+  }
+}
+
+                                            
+/* Base styling */
+.hidden {
+  display: none;
+}
+
+/* Custom Alert Styles */
+#custom-alert {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--skyblue);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: var(--bodyFont);
+  font-size: 16px;
+  color: var(--blue);
+  z-index: 9999;
+  animation: slide-up 0.5s ease-in-out;
+}
+
+.alert-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-text {
+  font-weight: bold;
+}
+
+.close-alert {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+@keyframes slide-up {
+  from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+  }
+}
