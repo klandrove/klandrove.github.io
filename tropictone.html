@@ -474,74 +474,94 @@
         </div>
     </section>
 
+
 <!-- ============================================ -->
 <!--                   Footer                     -->
 <!-- ============================================ -->
-    <footer id="footer">
-        <div class="cs-container">      
-            <!-- Logo Group -->
-            <div class="cs-logo-group">
-                <a aria-label="go back to home" class="cs-logo" href="../#home">
-                    <h2 class="cs-logo">Kaitlyn Landrove</h2>
-                </a>
-                <a href="mailto:kmlandrove04@gmail.com" id="emailLink" class="cs-link" target="_blank" rel="noopener">
-                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=86206&format=png&color=FFFFFF" alt="Copy email icon" title= "Copy Email" width="24" height="24">
-                    kmlandrove04@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/kaitlyn-landrove/" class="cs-link" target="_blank" rel="noopener">
-                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=85044&format=png&color=FFFFFF" alt="LinkedIn icon" title= "LinkedIn" width="24" height="24">
-                    LinkedIn
-                </a>
-                <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-link" target="_blank" rel="noopener">
-                    <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=24252&format=png&color=FFFFFF" alt="resume icon" title= "Resume" width="24" height="24">
-                    Resume
-                </a>
+<footer id="footer">
+    <div class="cs-container">      
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="../#home">
+                <h2 class="cs-logo">Kaitlyn Landrove</h2>
+            </a>
+            <a href="mailto:kmlandrove04@gmail.com" id="emailLink" class="cs-link" target="_blank" rel="noopener">
+                <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=86206&format=png&color=FFFFFF" alt="Copy email icon" title= "Copy Email" width="24" height="24">
+                kmlandrove04@gmail.com
+            </a>
+            <div id="custom-alert" class="hidden">
+                <div class="alert-content">
+                    <span class="alert-text">Email address copied to clipboard!</span>
+                    <span class="close-alert">&nbsp;x</span>
+                </div>
             </div>
-            <!-- Links -->
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <a class="cs-header-link" href="../#home">Home</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="../about">About</a>
-                </li>
-            </ul>
-            <ul class="cs-nav">
-                <li class="cs-nav-li">
-                    <a class="cs-header-link" href="../#projects">Projects</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="../tropictone.html">TropicTone</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="../space.html">Space Clothing</a>
-                </li>
-                <li class="cs-nav-li">
-                    <a class="cs-nav-link" href="../water_and_rings.html">Water and Rings</a>
-                </li>
-            </ul>            
+            <a href="https://www.linkedin.com/in/kaitlyn-landrove/" class="cs-link" target="_blank" rel="noopener">
+                <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=85044&format=png&color=FFFFFF" alt="LinkedIn icon" title= "LinkedIn" width="24" height="24">
+                LinkedIn
+            </a>
+            <a href="https://drive.google.com/file/d/1UO-WFyZWXCfW-cvr14GEWmxEh-1Yv_vi/view?usp=drive_link" class="cs-link" target="_blank" rel="noopener">
+                <img class="cs-link-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/?size=100&id=24252&format=png&color=FFFFFF" alt="resume icon" title= "Resume" width="24" height="24">
+                Resume
+            </a>
         </div>
-        <div class="cs-bottom">
-            <span class="cs-copyright">
-                <a class="cs-copyright-link" href="https://icons8.com" target="_blank" rel="noopener">Icons by Icons8</a>
-            </span>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <a class="cs-header-link" href="../#home">Home</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="../about">About</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <a class="cs-header-link" href="../#projects">Projects</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="../tropictone.html">TropicTone</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="../space.html">Space Clothing</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="../water_and_rings.html">Water and Rings</a>
+            </li>
+        </ul>            
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">
+            <a class="cs-copyright-link" href="https://icons8.com" target="_blank" rel="noopener">Icons by Icons8</a>
+        </span>
+        
+        <a href="https://codestitch.app/app" class="cs-copyright-link">Components from CodeStitch</a>
+    </div>
+    <!--Floating Cirlces-->
+    <div class="cs-floater" aria-hidden="true"></div>
+</footer>
+<script>
+    document.getElementById('emailLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the browser from navigating to the email address
+    const email = 'your.email@example.com';
+    navigator.clipboard.writeText(email).then(() => {
+        // Show custom alert
+        const alertBox = document.getElementById('custom-alert');
+        alertBox.classList.remove('hidden');
             
-            <a href="https://codestitch.app/app" class="cs-copyright-link">Components from CodeStitch</a>
-        </div>
-        <!--Floating Cirlces-->
-        <div class="cs-floater" aria-hidden="true"></div>
-    </footer>
-    <script>
-        document.getElementById('emailLink').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the browser from navigating to the email address
-        const email = 'your.email@example.com';
-        navigator.clipboard.writeText(email).then(() => {
-            alert('Email address copied to clipboard!'); // Optional feedback
-        }).catch(err => {
-            console.error('Failed to copy: ', err);
-        });
-        });
-    </script>
+        // Hide the alert after 3 seconds
+        setTimeout(() => {
+            alertBox.classList.add('hidden');
+        }, 3000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+    });
+
+    // Close alert when clicking the "×"
+    document.querySelector('.close-alert').addEventListener('click', () => {
+    document.getElementById('custom-alert').classList.add('hidden');
+    });
+
+</script>
 
 <script src="index.js"></script>
 
