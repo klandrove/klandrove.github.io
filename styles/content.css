@@ -346,6 +346,10 @@ img {
 }
   /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  #picture-right .cs-picture,
+  #picture-right .cs-image-group {
+    order: 2;
+  }
   #picture-left .cs-container,
   #picture-right .cs-container {
     max-width: 80rem;
@@ -358,6 +362,7 @@ img {
   #picture-right .cs-content {
     width: 50%;
     padding: 2.5rem 0;
+    order: 1;
   }
   #picture-left .cs-long,
   #picture-right .cs-long {
@@ -423,7 +428,8 @@ img {
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #picture-right .cs-picture {
+  #picture-right .cs-picture,
+  #picture-right .cs-image-group {
     /* sends it to the right in the 2nd position */
     order: 2;
   }
