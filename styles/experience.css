@@ -1,0 +1,103 @@
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #experience {
+        padding: var(--sectionPadding);
+    }
+    #experience .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #experience .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+    #experience .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 20px - 40px */
+        gap: clamp(1.25rem, 3vw, 2.5rem);
+    }
+    #experience .cs-item {
+        text-align: center;
+        list-style: none;
+        width: 100%;
+        max-width: 20.375rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #experience .cs-picture {
+        margin-bottom: 1.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: var(--blue);
+        border-radius: 1rem 0 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #experience .cs-h3 {
+        font-family: var(--headingFont);
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        text-align: inherit;
+        margin: 0 0 0.75rem 0;
+        color: var(--headerColor);
+    }
+    #experience .cs-item-p {
+        font-family: var(--bodyFont);
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: inherit;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #experience .cs-arrow {
+        /* 48px - 80px */
+        width: clamp(3rem, 6vw, 5rem);
+        height: auto;
+        display: block;
+        flex: none;
+    }
+    #experience .cs-arrow-img {
+        width: 100%;
+        display: block;
+    }
+    #experience .cs-icon {
+        width: 2rem;
+        height: auto;
+        display: block;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #experience .cs-card-group {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    #experience .cs-arrow {
+        align-self: center;
+    }
+}
+
+                                

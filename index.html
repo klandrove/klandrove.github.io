@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contactme.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/experience.css">
     
 </head>
 <body>
@@ -50,13 +51,13 @@
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="#contactme" class="cs-li-link">
-                                Contact Me
+                            <a href="#about" class="cs-li-link">
+                                About
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="#about" class="cs-li-link">
-                                About
+                            <a href="#contactme" class="cs-li-link">
+                                Contact Me
                             </a>
                         </li>
                     </ul>
@@ -80,7 +81,7 @@
             </div>
             <div class="cs-content">
                 <span class="cs-topper">HELLO, I'M KAITLYN!</span>
-                <h2 class="cs-title">I'M A FRONT-END DEVELOPER</h2>
+                <h2 class="cs-title cs-title-home" id="title" style="min-width: 50vw">I'M A CREATIVE TECHNOLOGIST</h2>
                 <p class="cs-text">
                     I create engaging websites, apps, and digital experiences that blend technology with creativity. My work focuses on seamless user experiences, thoughtful design, and innovative web interactions.
                 </p>
@@ -157,6 +158,68 @@
         </ul>
     </div>
 </section>
+
+
+<!-- ============================================ -->
+<!--                 Experience                   -->
+<!-- ============================================ -->
+
+<section id="experience">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Professional Journey</span>
+            <h2 class="cs-title">My Experience</h2>
+            <p class="cs-text">
+                From performance testing and prototyping wildfire tools to guiding student teams through capstone projects, my experience blends technical depth with collaborative leadership.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <!-- Life Products Solutions Group -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://img.icons8.com/?size=100&id=123838&format=png&color=ffffff" alt="briefcase icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Quality Assurance Intern</h3>
+                <p class="cs-item-p">
+                    <b>Life Products Solutions Group</b><br>Jul 2021 – Aug 2021<br><br>
+                    Debugged and tested XML data, ran regressions, and verified accurate software inputs and outputs to ensure quality releases.
+                </p>
+            </li>
+            <!-- Arrow -->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://img.icons8.com/?size=100&id=39969&format=png&color=274C77" alt="arrow" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>            
+            <!-- CSAA Insurance Group -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://img.icons8.com/?size=100&id=123838&format=png&color=ffffff" alt="skills icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Performance QA Intern</h3>
+                <p class="cs-item-p">
+                    <b>CSAA Insurance Group</b><br>May 2024 – Aug 2024<br><br>
+                    Deployed tests with Jenkins, built New Relic and Splunk dashboards, and won the Intern Innovation Jam with a Figma prototype tackling wildfire risk.
+                </p>
+            </li>
+            <!-- Arrow -->
+            <li class="cs-item cs-arrow" aria-hidden="true">
+                <img class="cs-arrow-img" src="https://img.icons8.com/?size=100&id=39969&format=png&color=274C77" alt="arrow" width="80" height="76" loading="lazy" decoding="async" aria-hidden="true">
+            </li>
+
+            <!-- Teaching Assistant -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://img.icons8.com/?size=100&id=123838&format=png&color=ffffff" alt="UM TA icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Teaching Assistant</h3>
+                <p class="cs-item-p">
+                    <b>University of Miami</b><br>Jan 2025 – Present<br><br>
+                    Mentored capstone teams, facilitated scrum-style meetings, and collaborated with faculty to track milestones and troubleshoot technical roadblocks.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
   
 
 <!-- ============================================ -->
@@ -214,41 +277,10 @@
                 </li>
             </ul>
         </div>
+          
     </section>
 
 
-<!-- ============================================ -->
-<!--                   Contact                    -->
-<!-- ============================================ -->
-
-<section id="contactme">
-    <div class="cs-container">
-        <!--Form-->
-        <form class="cs-form" id="cs-form" name="Contact Form" action="https://formsubmit.co/3c384047ccefe3ded46bdfe909b4e293" method="POST">
-            <div class="cs-content">
-                <span class="cs-topper">Contact Me</span>
-                <h2 class="cs-title">I'd Love to Hear From You!</h2>
-            </div>
-            <label class="cs-label">
-                Name *
-                <input class="cs-input" required type="text" id="name" name="name" placeholder="Name">
-            </label>
-            <label class="cs-label cs-email">
-                Email *
-                <input class="cs-input" required type="email" id="email" name="email" placeholder="Email">
-            </label>
-            <label class="cs-label cs-phone">
-                Phone
-                <input class="cs-input" type="number" id="phone name="phone" placeholder="Phone">
-            </label>
-            <label class="cs-label">
-                Message *
-                <textarea class="cs-input cs-textarea" required name="Message" id="message" placeholder="Write message..."></textarea>
-            </label>
-            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
  
 <!-- ============================================ -->
 <!--                   About Me                   -->
@@ -286,6 +318,40 @@
             </div>
         </div>
     </section>
+
+    
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contactme">
+    <div class="cs-container">
+        <!--Form-->
+        <form class="cs-form" id="cs-form" name="Contact Form" action="https://formsubmit.co/3c384047ccefe3ded46bdfe909b4e293" method="POST">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Me</span>
+                <h2 class="cs-title">I'd Love to Hear From You!</h2>
+            </div>
+            <label class="cs-label">
+                Name *
+                <input class="cs-input" required type="text" id="name" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label cs-email">
+                Email *
+                <input class="cs-input" required type="email" id="email" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-phone">
+                Phone
+                <input class="cs-input" type="number" id="phone name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Message *
+                <textarea class="cs-input cs-textarea" required name="Message" id="message" placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
 
 <!-- ============================================ -->
 <!--                   Footer                     -->
@@ -378,6 +444,7 @@ document.querySelector('.close-alert').addEventListener('click', () => {
                           
     <script src="index.js"></script>
     <script src="scroll.js"></script>
+    <script src="rotate_words.js"></script>
     
 </body>
 </html>

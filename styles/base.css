@@ -56,6 +56,11 @@ body {
   position: relative;
 }
 
+.cs-title-home{
+  min-width: 50vw;
+  font-size: 1.6rem;
+}
+
 .cs-text {
   font-family: var(--bodyFont);
   font-size: var(--bodyFontSize);
@@ -446,6 +451,10 @@ body {
   }
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
+  }
+  .cs-title-home{
+    min-width: 50vw;
+    font-size: var(--headerFontSize);
   }
 }
 
