@@ -81,6 +81,7 @@
     #experience .cs-arrow-img {
         width: 100%;
         display: block;
+        transform: rotate(90deg);
     }
     #experience .cs-icon {
         width: 2rem;
@@ -97,6 +98,10 @@
     }
     #experience .cs-arrow {
         align-self: center;
+    }
+
+    #experience .cs-arrow-img {
+        transform: rotate(0deg);
     }
 }
 
